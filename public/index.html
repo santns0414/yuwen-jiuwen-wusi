@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>九年级语文上册 · 六维解读（2026秋版）</title>
+<style>
+:root {
+  --bg: #f7f3eb;
+  --bg-soft: #efe8dc;
+  --text: #2a241c;
+  --text-muted: #5c5348;
+  --heading: #1e3a5f;
+  --card: #fffdf8;
+  --card-border: #e5d9c8;
+  --nav-bg: rgba(255,253,248,0.95);
+  --accent: #c4783a;
+  --shadow: 0 2px 12px rgba(42,36,28,0.06);
+  --d1: #fff4e8; --d1b: #e8a05c; --d1t: #7a4a18;
+  --d2: #fdeee6; --d2b: #d4785a; --d2t: #6b3424;
+  --d3: #f5efe6; --d3b: #b8956a; --d3t: #5a4528;
+  --d4: #f8f0e4; --d4b: #c9a05a; --d4t: #5c4820;
+  --d5: #f3ebe3; --d5b: #a87858; --d5t: #4a3228;
+  --d6: #eef3f0; --d6b: #5a8f7b; --d6t: #2a4a3c;
+  --radius: 12px;
+  --font: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+[data-theme="dark"] {
+  --bg: #121212;
+  --bg-soft: #1a1a1a;
+  --text: #f0e6d8;
+  --text-muted: #b8a990;
+  --heading: #f5c98a;
+  --card: #1e1a16;
+  --card-border: #3a3028;
+  --nav-bg: rgba(26,26,26,0.96);
+  --accent: #e8a05c;
+  --shadow: 0 2px 16px rgba(0,0,0,0.4);
+  --d1: #2a2218; --d1b: #e8a05c; --d1t: #f5d4a8;
+  --d2: #2c1e18; --d2b: #e07850; --d2t: #f0c4b0;
+  --d3: #262018; --d3b: #c9a06a; --d3t: #e8d4b0;
+  --d4: #2a2418; --d4b: #d4b06a; --d4t: #f0e0b8;
+  --d5: #241e1a; --d5b: #c08060; --d5t: #e8c8b0;
+  --d6: #1a2420; --d6b: #6ab89a; --d6t: #b8e0d0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+button.linkish {
+  background: none; border: none; color: var(--accent); font: inherit;
+  cursor: pointer; padding: 0; text-align: left;
+}
+button.linkish:hover { text-decoration: underline; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem;
+  padding: 0.65rem 1.1rem;
+  background: var(--nav-bg); border-bottom: 1px solid var(--card-border);
+  backdrop-filter: blur(8px);
+}
+.topbar .brand {
+  font-weight: 700; color: var(--heading); font-size: 0.95rem; margin-right: auto;
+  cursor: pointer; border: none; background: none; font-family: inherit;
+}
+.topbar .brand:hover { color: var(--accent); }
+.theme-row { display: flex; gap: 0.35rem; }
+.theme-btn {
+  border: 1px solid var(--card-border); background: var(--card);
+  color: var(--text); border-radius: 8px; padding: 0.3rem 0.55rem;
+  font-size: 0.78rem; cursor: pointer; font-family: inherit;
+}
+.theme-btn.active { background: var(--accent); color: #1a1208; border-color: var(--accent); font-weight: 600; }
+.crumb {
+  width: 100%; font-size: 0.8rem; color: var(--text-muted);
+  display: flex; flex-wrap: wrap; gap: 0.25rem; align-items: center;
+}
+.crumb a, .crumb button.linkish { font-size: 0.8rem; }
+.crumb .sep { opacity: 0.5; }
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 1.25rem 1.1rem 3.5rem; }
+
+.back-btn {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  margin-bottom: 1rem; padding: 0.4rem 0.75rem;
+  border: 1px solid var(--card-border); border-radius: 8px;
+  background: var(--card); color: var(--text); font-size: 0.85rem;
+  cursor: pointer; font-family: inherit;
+}
+.back-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.hero {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius); padding: 1.4rem 1.5rem; margin-bottom: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.hero h1 { color: var(--heading); font-size: 1.45rem; margin-bottom: 0.4rem; }
+.hero h2 { color: var(--heading); font-size: 1.25rem; margin-bottom: 0.4rem; }
+.hero p { color: var(--text-muted); font-size: 0.92rem; }
+
+.dims-legend { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
+.dims-legend span {
+  font-size: 0.72rem; padding: 0.22rem 0.5rem; border-radius: 999px;
+  border: 1px solid transparent; font-weight: 600;
+}
+.l1 { background: var(--d1); color: var(--d1t); border-color: var(--d1b) !important; }
+.l2 { background: var(--d2); color: var(--d2t); border-color: var(--d2b) !important; }
+.l3 { background: var(--d3); color: var(--d3t); border-color: var(--d3b) !important; }
+.l4 { background: var(--d4); color: var(--d4t); border-color: var(--d4b) !important; }
+.l5 { background: var(--d5); color: var(--d5t); border-color: var(--d5b) !important; }
+.l6 { background: var(--d6); color: var(--d6t); border-color: var(--d6b) !important; }
+
+.grid-2 {
+  display: grid; gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+
+.entry-card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius); padding: 1.25rem 1.3rem;
+  box-shadow: var(--shadow); cursor: pointer; transition: border-color .15s, transform .15s;
+  text-align: left; font-family: inherit; color: inherit; width: 100%;
+}
+.entry-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.entry-card h3 { color: var(--heading); font-size: 1.1rem; margin-bottom: 0.35rem; }
+.entry-card p { color: var(--text-muted); font-size: 0.88rem; }
+.entry-card .go { margin-top: 0.7rem; font-size: 0.82rem; color: var(--accent); font-weight: 600; }
+
+.list-card {
+  display: block; width: 100%; text-align: left;
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 10px; padding: 0.85rem 1rem; margin-bottom: 0.55rem;
+  box-shadow: var(--shadow); cursor: pointer; font-family: inherit; color: inherit;
+}
+.list-card:hover { border-color: var(--accent); }
+.list-card .t { color: var(--heading); font-weight: 600; font-size: 0.98rem; }
+.list-card .s { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.15rem; }
+.list-card .star { color: var(--accent); font-size: 0.75rem; font-weight: 600; margin-left: 0.35rem; }
+
+.lesson-head {
+  margin-bottom: 1rem; padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--card-border);
+}
+.lesson-head h2 { color: var(--heading); font-size: 1.2rem; }
+.lesson-head .meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem; }
+.tag {
+  display: inline-block; font-size: 0.72rem; color: var(--text-muted);
+  background: var(--bg-soft); padding: 0.12rem 0.4rem; border-radius: 6px; margin-right: 0.35rem;
+}
+
+.dim {
+  border-radius: 10px; padding: 0.8rem 0.95rem; margin-bottom: 0.6rem;
+  border: 1px solid transparent;
+}
+.dim h4 {
+  font-size: 0.9rem; margin-bottom: 0.35rem;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.dim p { font-size: 0.92rem; margin-bottom: 0.35rem; }
+.dim ul { padding-left: 1.15rem; font-size: 0.9rem; }
+.dim li { margin-bottom: 0.25rem; }
+.dim.d1 { background: var(--d1); border-color: color-mix(in srgb, var(--d1b) 45%, transparent); }
+.dim.d1 h4 { color: var(--d1t); }
+.dim.d2 { background: var(--d2); border-color: color-mix(in srgb, var(--d2b) 45%, transparent); }
+.dim.d2 h4 { color: var(--d2t); }
+.dim.d3 { background: var(--d3); border-color: color-mix(in srgb, var(--d3b) 45%, transparent); }
+.dim.d3 h4 { color: var(--d3t); }
+.dim.d4 { background: var(--d4); border-color: color-mix(in srgb, var(--d4b) 45%, transparent); }
+.dim.d4 h4 { color: var(--d4t); }
+.dim.d5 { background: var(--d5); border-color: color-mix(in srgb, var(--d5b) 45%, transparent); }
+.dim.d5 h4 { color: var(--d5t); }
+.dim.d6 { background: var(--d6); border-color: color-mix(in srgb, var(--d6b) 45%, transparent); }
+.dim.d6 h4 { color: var(--d6t); }
+
+.simple-block {
+  background: var(--bg-soft); border-radius: 10px; padding: 0.9rem 1rem;
+  font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.6rem;
+}
+.simple-block strong { color: var(--heading); }
+
+.zk-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 0.8rem 0; }
+.zk-table th, .zk-table td {
+  border: 1px solid var(--card-border); padding: 0.45rem 0.5rem; text-align: left; vertical-align: top;
+}
+.zk-table th { background: var(--bg-soft); color: var(--heading); }
+.heat {
+  display: inline-block; font-size: 0.7rem; font-weight: 700;
+  padding: 0.1rem 0.4rem; border-radius: 999px; background: var(--d6); color: var(--d6t);
+}
+.point-card, .cat-card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 10px; padding: 0.9rem 1rem; margin-bottom: 0.65rem;
+}
+.point-card h4, .cat-card h4 { color: var(--heading); font-size: 0.95rem; margin-bottom: 0.3rem; }
+.muted { color: var(--text-muted); font-size: 0.85rem; }
+.footer-note {
+  margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--card-border);
+  font-size: 0.78rem; color: var(--text-muted);
+}
+.chip-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.5rem 0; }
+.chip {
+  font-size: 0.75rem; padding: 0.2rem 0.5rem; border-radius: 999px;
+  background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--card-border);
+}
+ul.plain { padding-left: 1.2rem; font-size: 0.9rem; }
+ul.plain li { margin-bottom: 0.3rem; }
+
+.lesson-layout {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .lesson-layout { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+  .lesson-layout .dims-col { order: 0; }
+  .lesson-layout .side-col { order: 0; position: sticky; top: 4.5rem; }
+}
+.side-panel {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius); padding: 0.95rem 1rem; margin-bottom: 0.85rem;
+  box-shadow: var(--shadow);
+}
+.side-panel h3 {
+  color: var(--heading); font-size: 1rem; margin-bottom: 0.35rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;
+}
+.side-panel .panel-hint { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
+.note-item, .task-item {
+  border: 1px solid var(--card-border); border-radius: 10px;
+  padding: 0.75rem 0.85rem; margin: 0.55rem 0; background: var(--bg-soft);
+}
+.note-item h4, .task-item h4 { color: var(--heading); font-size: 0.92rem; margin-bottom: 0.25rem; }
+.note-meta, .task-meta { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+.note-body, .task-prompt { font-size: 0.88rem; white-space: pre-wrap; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.45rem; }
+.side-form {
+  margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--card-border);
+}
+.side-form label {
+  display: block; font-size: 0.78rem; color: var(--text-muted); margin: 0.35rem 0 0.2rem;
+}
+.side-form input, .side-form textarea {
+  width: 100%; border: 1px solid var(--card-border); border-radius: 8px;
+  background: var(--card); color: var(--text); font-family: inherit; font-size: 0.88rem;
+  padding: 0.45rem 0.55rem;
+}
+.side-form textarea { min-height: 4.5rem; resize: vertical; }
+.side-form .form-actions { display: flex; gap: 0.45rem; margin-top: 0.55rem; flex-wrap: wrap; }
+.btn-primary, .btn-ghost {
+  border-radius: 8px; padding: 0.4rem 0.75rem; font-size: 0.82rem;
+  cursor: pointer; font-family: inherit; border: 1px solid var(--card-border);
+}
+.btn-primary { background: var(--accent); color: #1a1208; border-color: var(--accent); font-weight: 600; }
+.btn-ghost { background: var(--card); color: var(--text); }
+/* WeChat-style debate chat */
+.chat-thread {
+  margin-top: 0.65rem;
+  padding: 0.7rem 0.55rem 0.55rem;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.chat-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 92%;
+}
+.chat-row.pro { align-self: flex-start; align-items: flex-start; }
+.chat-row.con { align-self: flex-end; align-items: flex-end; }
+.chat-nick {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+  opacity: 0.9;
+}
+.chat-row.pro .chat-nick { color: var(--d1t); }
+.chat-row.con .chat-nick { color: var(--d2t); }
+.chat-bubble {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+.chat-row.pro .chat-bubble {
+  background: #fff1e0;
+  border-color: #e8b87a;
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+.chat-row.con .chat-bubble {
+  background: #fde8df;
+  border-color: #e09a7a;
+  color: var(--text);
+  border-bottom-right-radius: 4px;
+}
+[data-theme="dark"] .chat-row.pro .chat-bubble {
+  background: #2e2418;
+  border-color: #c4883a;
+  color: var(--text);
+}
+[data-theme="dark"] .chat-row.con .chat-bubble {
+  background: #2c1c18;
+  border-color: #d07850;
+  color: var(--text);
+}
+/* keep old class names harmless if leftover */
+.debate-side { margin-top: 0.5rem; }
+.debate-point { font-size: 0.85rem; }
+.empty-hint { font-size: 0.85rem; color: var(--text-muted); padding: 0.4rem 0; }
+.badge-src {
+  font-size: 0.68rem; padding: 0.08rem 0.35rem; border-radius: 999px;
+  background: var(--d6); color: var(--d6t); font-weight: 600; margin-left: 0.25rem;
+}
+
+
+.site-nav {
+  display: flex; gap: 0.35rem; align-items: center;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; max-width: 100%;
+  padding-bottom: 0.15rem;
+}
+.site-nav::-webkit-scrollbar { height: 4px; }
+.nav-link {
+  flex: 0 0 auto; border: 1px solid var(--card-border); background: var(--card);
+  color: var(--text); border-radius: 999px; padding: 0.28rem 0.65rem;
+  font-size: 0.78rem; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.nav-link:hover, .nav-link.active { background: var(--accent); color: #1a1208; border-color: var(--accent); font-weight: 600; }
+.share-bar {
+  display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center;
+  margin: 0.55rem 0 0.75rem; padding: 0.55rem 0.65rem;
+  background: var(--bg-soft); border: 1px solid var(--card-border); border-radius: 10px;
+  font-size: 0.8rem;
+}
+.share-bar .code-pill {
+  font-weight: 700; letter-spacing: 0.06em; color: var(--heading);
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 8px; padding: 0.2rem 0.5rem;
+}
+.share-bar input {
+  width: 7.5rem; max-width: 40vw; border: 1px solid var(--card-border); border-radius: 8px;
+  background: var(--card); color: var(--text); font-family: inherit; font-size: 0.8rem;
+  padding: 0.28rem 0.45rem;
+}
+.form-accordion {
+  margin-top: 0.75rem; border: 1px solid var(--card-border); border-radius: 10px;
+  background: var(--card); overflow: hidden;
+}
+.form-accordion > summary {
+  list-style: none; cursor: pointer; padding: 0.65rem 0.85rem;
+  font-weight: 600; color: var(--heading); font-size: 0.9rem;
+  display: flex; align-items: center; justify-content: space-between;
+  user-select: none;
+}
+.form-accordion > summary::-webkit-details-marker { display: none; }
+.form-accordion > summary::after { content: "＋"; font-weight: 700; color: var(--accent); }
+.form-accordion[open] > summary::after { content: "－"; }
+.form-accordion .side-form {
+  margin-top: 0; padding: 0 0.85rem 0.85rem; border-top: 1px dashed var(--card-border);
+}
+.toast {
+  position: fixed; left: 50%; bottom: 1.4rem; transform: translateX(-50%);
+  z-index: 80; max-width: 90vw; padding: 0.55rem 0.9rem;
+  background: var(--heading); color: #fff; border-radius: 999px;
+  font-size: 0.82rem; box-shadow: var(--shadow); opacity: 0; pointer-events: none;
+  transition: opacity .2s;
+}
+.toast.show { opacity: 1; }
+.pager {
+  display: flex; gap: 0.45rem; align-items: center; justify-content: center;
+  flex-wrap: wrap; margin: 1rem 0 0.4rem;
+}
+.pager button {
+  border: 1px solid var(--card-border); background: var(--card); color: var(--text);
+  border-radius: 8px; padding: 0.35rem 0.7rem; font-size: 0.82rem; cursor: pointer; font-family: inherit;
+}
+.pager button:disabled { opacity: 0.45; cursor: not-allowed; }
+.pager .page-info { font-size: 0.8rem; color: var(--text-muted); }
+.home-unit-grid { display: grid; gap: 0.7rem; grid-template-columns: 1fr 1fr; }
+@media (max-width: 560px) { .home-unit-grid { grid-template-columns: 1fr; } }
+.unit-mini-card {
+  text-align: left; border: 1px solid var(--card-border); background: var(--card);
+  border-radius: var(--radius); padding: 0.85rem 0.95rem; cursor: pointer;
+  font-family: inherit; color: var(--text); box-shadow: var(--shadow);
+}
+.unit-mini-card h3 { color: var(--heading); font-size: 0.95rem; margin-bottom: 0.25rem; }
+.unit-mini-card p { font-size: 0.78rem; color: var(--text-muted); }
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <button type="button" class="brand" id="brandBtn">九年级语文上册</button>
+  <nav class="site-nav" id="siteNav" aria-label="主导航">
+    <button type="button" class="nav-link" data-nav="home">首页</button>
+    <button type="button" class="nav-link" data-nav="liudu/u1">一单元</button>
+    <button type="button" class="nav-link" data-nav="liudu/u2">二单元</button>
+    <button type="button" class="nav-link" data-nav="liudu/u3">三单元</button>
+    <button type="button" class="nav-link" data-nav="liudu/u4">四单元</button>
+    <button type="button" class="nav-link" data-nav="liudu/u5">五单元</button>
+    <button type="button" class="nav-link" data-nav="liudu/u6">六单元</button>
+    <button type="button" class="nav-link" data-nav="zhongkao">中考趋势</button>
+  </nav>
+  <div class="theme-row">
+    <button type="button" class="theme-btn active" id="btn-light">浅色</button>
+    <button type="button" class="theme-btn" id="btn-dark">深色</button>
+  </div>
+  <nav class="crumb" id="crumb" aria-label="面包屑"></nav>
+</header>
+<main class="wrap" id="app"></main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="application/json" id="app-data">{"units":[{"id":"u1","name":"第一单元　活动·探究·诗歌","short":"第一单元　诗歌","goal":"鉴赏现代诗歌意象与情感；完成朗诵与尝试创作。","lessons":["l1","l2","l3","l4","l5","l6","l1-task"]},{"id":"u2","name":"第二单元　议论文（精神品格）","short":"第二单元　议论文","goal":"把握论点、论据、论证；体会立论与驳论；涵养志气、骨气、底气。","lessons":["l7","l8","l9","l10","l2-extra"]},{"id":"u3","name":"第三单元　古代记游与诗词","short":"第三单元　记游诗词","goal":"感受山水记与古诗词中的情怀：先忧后乐、与民同乐、豁达人生。","lessons":["l11","l12","l13","l14a","l14b","l14c","l3-extra"]},{"id":"u4","name":"第四单元　小说","short":"第四单元　小说","goal":"把握小说三要素；体会社会批判、人性冷暖、少年成长与乡土人情。","lessons":["l15","l16","l17","l18","l4-extra"]},{"id":"u5","name":"第五单元　议论文（思维与精神）","short":"第五单元　议论文","goal":"想做结合、怀疑治学、正义立场与精神家园；提升思辨能力。","lessons":["l19","l20","l21","l22","l5-extra"]},{"id":"u6","name":"第六单元　史传文言与诗词曲","short":"第六单元　史传诗词曲","goal":"积累文言知识；体会远谋、讽谏、反抗、忠义与家国情怀。","lessons":["l23","l24","l25","l26","l27a","l27b","l27c","l27d","l27e","l6-extra"]}],"lessons":{"l1":{"id":"l1","title":"1　《沁园春·雪》","tag":"毛泽东 · 词","star":false,"dims":{"1":{"title":"情节结构","lead":"上阕写景、下阕议论，借景抒情、评古论今。","bullets":["上阕以「望」统领：北国雪景——长城、大河、山原，由实到虚（须晴日）","「江山如此多娇」承上启下，由景入议","下阕以「惜」评点秦皇汉武等历史人物，收束「数风流人物，还看今朝」"]},"2":{"title":"人物形象","lead":"抒情主体是诗人本人，气魄雄浑，兼具政治家与诗人的双重身份。","bullets":["抒情主体：站在历史高度俯瞰江山与人物，自信豪迈","历史人物（秦皇、汉武、唐宗、宋祖、成吉思汗）：建功立业却「略输文采」「稍逊风骚」，作陪衬"]},"3":{"title":"主题思想","lead":"热爱祖国山河，评古论今，抒发当代英雄的自信与豪迈。","bullets":["核心名句：俱往矣，数风流人物，还看今朝","景中含情，议中见志——「今朝」的风流人物更能主沉浮"]},"4":{"title":"写作手法","lead":"比喻、拟人、动静结合、虚实结合。","bullets":["「山舞银蛇，原驰蜡象」：比喻+拟人+化静为动","「须晴日……分外妖娆」：虚写，想象晴雪之美","词牌「沁园春」，题目「雪」；上下阕结构分明"]},"5":{"title":"时代背景","lead":"作于1936年长征到达陕北之后；词体传统与革命现实主义结合。","bullets":["作者：毛泽东。作品展现革命年代对祖国与时代的豪情","文体：宋词词牌，内容为现代革命抒情"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：跨文本比较、换视角重读、创意表达。","bullets":["跨文本：与同单元《我爱这土地》对照——同写「土地/山河之爱」，一者豪迈评古论今，一者苦难中的深沉。可比点：意象、语气、抒情主体身份。","换视角：以「秦皇汉武」口吻写一段短评，回应「略输文采」——训练评价与自圆其说（批判质疑类）。","创意表达：为「须晴日」画一幅「思维导图节点」：实景→虚景→情→志，补全空缺并写一句依据（结构化梳理）。"]}},"l2":{"id":"l2","title":"2　《周总理，你在哪里》","tag":"柯岩 · 现代诗","star":false,"dims":{"1":{"title":"情节结构","lead":"呼告—寻觅—回音—再呼唤，情感层层推进。","bullets":["开篇反复呼唤「周总理，你在哪里」","中段借高山、大地、森林、大海等「回音」展开寻觅","收束于「在这里」——精神永存，人民心中"]},"2":{"title":"人物形象","lead":"周总理形象通过人民的寻觅与回音侧面塑造。","bullets":["周总理：无私奉献、与人民同在的崇高形象","抒情主体「我们」：亿万人民，情感真挚、口语化"]},"3":{"title":"主题思想","lead":"深切怀念周总理，歌颂其与人民血肉相连的崇高品格。","bullets":["「在这里」的深层含义：精神永存，活在人民心中","人民与总理的情感纽带是全诗主线"]},"4":{"title":"写作手法","lead":"反复、拟人、象征；口语化抒情。","bullets":["反复呼告强化情感节奏","自然景物拟人化作「回音」，象征人民的回答"]},"5":{"title":"时代背景","lead":"写于周总理逝世后的悼念语境，体现1970年代人民的集体哀思。","bullets":["作者：柯岩。作品是悼念诗中的经典篇目","文化语境：人民对人民公仆的深情纪念"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：象征互文、情境任务、多角度情感。","bullets":["跨文本：与第五单元《精神的三间小屋》比「精神永存」——一者人民呼唤，一者自我筑屋；比较抒情方式与读者任务。","情境任务：假设班级举办「怀念人物」朗诵会，你是主持人，结合诗中「在这里」设计30秒开场白（须点出精神永存）。","多角度：从「高山/大地/森林/大海」任一「回音」角色，写它「看见」了总理什么——训练物象与主题链条。"]}},"l3":{"id":"l3","title":"3　《我爱这土地》","tag":"艾青 · 现代诗","star":false,"dims":{"1":{"title":"情节结构","lead":"意象歌唱 → 献身土地 → 直抒「爱得深沉」。","bullets":["以「鸟」自喻，歌唱土地、河流、风、黎明","愿死了「连羽毛也腐烂在土地里面」——爱至极致","末两句设问作答，情感顶点"]},"2":{"title":"人物形象","lead":"抒情主体是「鸟」所象征的爱国者。","bullets":["鸟＝爱国者：嘶哑而执着地歌唱","土地、河流、风、黎明：祖国的苦难与希望的拟人化对象"]},"3":{"title":"主题思想","lead":"对饱受苦难的祖国刻骨铭心的爱，愿为之献出生命。","bullets":["名句：为什么我的眼里常含泪水？因为我对这土地爱得深沉……","爱不是甜美的歌颂，而是含泪的、痛苦而执着的"]},"4":{"title":"写作手法","lead":"象征、拟人、直抒胸臆。","bullets":["象征系统：鸟→爱国者；土地→祖国；河流/风/黎明→苦难与希望","「嘶哑」一词写出痛苦中的执着"]},"5":{"title":"时代背景","lead":"写于抗战时期（1938年前后），国土沦陷、民族危亡。","bullets":["作者：艾青。抗战语境下的爱国抒情诗","「暴风雨」等意象呼应民族苦难"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：象征细读、比较阅读、开放探究。","bullets":["跨文本：与《乡愁》比「土地/家国」——鸟死腐土地 vs 海峡阻隔；同是家国情，苦难执着与统一期盼有何不同？","换视角：若「土地」能说话，它会对这只鸟说什么？写4行诗（创意表达+文本依据）。","批判质疑：有人说末句「泪水」太伤感、不够「昂扬」——你是否同意？用诗中意象举证。"]}},"l4":{"id":"l4","title":"4　《乡愁》","tag":"余光中 · 现代诗","star":false,"dims":{"1":{"title":"情节结构","lead":"按时序四段递进：小时候—长大后—后来—现在。","bullets":["四意象：邮票 → 船票 → 坟墓 → 海峡","由个人亲情思念，升华为家国统一期盼","结构整齐、回环往复"]},"2":{"title":"人物形象","lead":"抒情主体「我」：游子、思乡者，末节升为家国之情的承载者。","bullets":["「我」与母亲、新娘、母亲（坟墓）、大陆构成关系链","海峡一节：「我在这头 / 大陆在那头」——个人升至家国"]},"3":{"title":"主题思想","lead":"乡愁由亲情、爱情、生死之思，升华为对祖国统一的期盼。","bullets":["以小见大：一张邮票、一张船票写尽人生阶段的离愁","末节乡愁具有时代与家国意义"]},"4":{"title":"写作手法","lead":"比喻、对比、叠词与反复；意象递进。","bullets":["「小小的」「窄窄的」「矮矮的」「浅浅的」——叠词强化可感的距离","四段并列又递进，节奏鲜明，宜于朗诵"]},"5":{"title":"时代背景","lead":"写于1970年代，两岸隔绝的历史语境。","bullets":["作者：余光中（台湾）。个人乡愁与家国情怀交融","海峡意象具有鲜明的时代烙印"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：意象递进结构化、家国互文、续写迁移。","bullets":["结构化：补全「邮票→船票→坟墓→海峡」导图，每节点标注「个人情感层」与「家国意义层」。","跨文本/名著：联系《黄河颂》或课外「思乡」诗，用「比」说明本诗「以小见大」的独特处。","情境：给台湾同龄笔友写一段话，引用末节意象但不照搬原文，表达你对「乡愁」的理解。"]}},"l5":{"id":"l5","title":"5　《你是人间的四月天》","tag":"林徽因 · 现代诗","star":false,"dims":{"1":{"title":"情节结构","lead":"以「四月天」为中心意象，层层铺陈明丽景物，首尾呼应。","bullets":["开篇点题：我说你是人间的四月天","中段展开云烟、星子、细雨、百花、白莲、燕等意象","收束回扣「四月天」＝爱、暖、希望"]},"2":{"title":"人物形象","lead":"抒情主体深情赞颂「你」——爱的对象，形象轻盈明亮。","bullets":["「你」被喻为四月天：温暖、鲜活、满是希望","抒情者口吻亲切、柔美"]},"3":{"title":"主题思想","lead":"一句爱的赞颂：爱、温暖与希望。","bullets":["中心意象「四月天」＝爱、暖、希望","意境轻盈、色彩鲜亮，与深沉悲愤类诗形成对照"]},"4":{"title":"写作手法","lead":"比喻、排比、通感；音韵和谐。","bullets":["韵脚：天、烟、前、圆、鲜、莲、燕、暖等，读来流畅","首尾呼应强化主旨"]},"5":{"title":"时代背景","lead":"中国现代新诗时期；林徽因诗歌以清新雅致见长。","bullets":["作者：林徽因。现代白话诗中的柔美一脉","文化语境：新月派前后的现代抒情传统"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：意象比较、审美创意、视角转换。","bullets":["跨文本：与《我看》对照——同写春日生机，一者献给「你」（爱的赞颂），一者通向「与自然合流」。可比情感指向。","换视角：把「你」理解为「理想/希望」而非具体人，重读「四月天」各意象，写三条新解读（须有文本依据）。","创意：用本诗音韵（天/烟/燕/暖）仿写4行「一句赞颂」，主题自选但须明丽意象。"]}},"l6":{"id":"l6","title":"6　《我看》","tag":"穆旦 · 现代诗","star":false,"dims":{"1":{"title":"情节结构","lead":"「我看」领起：观景之美 → 生命短暂的忧思 → 与自然合流的向往。","bullets":["意象层：春风揉青草、飞鸟吸入晴空、流云、大地","情感层：热爱自然 → 体悟生命 → 渴望「呼吸与自然合流」"]},"2":{"title":"人物形象","lead":"抒情主体「我」：敏感、沉思，向往生命的自由坦荡。","bullets":["「我」既是自然的观者，也是生命意义的追问者"]},"3":{"title":"主题思想","lead":"热爱自然，向往生命与自然的交融、自由坦荡。","bullets":["核心意向：让我的呼吸与自然合流","在生机画面中思考生命短暂与永恒"]},"4":{"title":"写作手法","lead":"意象密集；由景入理；现代诗的智性抒情。","bullets":["「揉」「吸入」等动词赋予自然以生命感","九叶诗派注重感觉与思想的融合"]},"5":{"title":"时代背景","lead":"穆旦（查良铮），九叶诗派代表；中国现代主义诗歌语境。","bullets":["作者身份：诗人兼翻译家","九叶诗派强调现代经验与诗歌艺术的结合"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：哲思比较、生命主题开放探究。","bullets":["跨文本：与《你是人间的四月天》比自然意象功能——赞美对象 vs 生命省思。","开放探究：「让我的呼吸与自然合流」在当下数字生活里意味着什么？结合第五单元「数字时代」综学谈一点认识。","手法→主题：任选一处「我看」画面，说明它如何推向生命短暂与坦荡向往（上海式：手法在结构中的功能）。"]}},"l1-task":{"id":"l1-task","title":"任务二　诗歌朗诵 / 任务三　尝试创作","tag":"","star":false,"dims":{},"simple":"学习要点：朗诵重停顿、重音、情感；创作可借具体意象抒情，语言凝练，注意节奏。把鉴赏落到「读」与「写」。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["跨文本：从本单元六首中选两首，做「意象—情感」对照卡。","创意：朗诵会设计「情境开场」；创作交作业时附一句「我写的意象依据」。","开放：评价同学诗作时练习「文本依据+建议」，对接批判表达。"]}},"l7":{"id":"l7","title":"7　《培养德智体美劳全面发展的社会主义建设者和接班人》","tag":"议论文","star":false,"dims":{"1":{"title":"情节结构（论证结构）","lead":"围绕「培养时代新人」展开立论，层层阐明根本任务与要求。","bullets":["提出根本任务：培养担当民族复兴大任的时代新人","展开：坚定理想信念、志存高远","落脚：德智体美劳全面发展"]},"2":{"title":"人物形象（论证者立场）","lead":"论述者以国家教育方针的高度，面向青年提出期待与要求。","bullets":["隐含对象：广大青年学生——未来的建设者和接班人"]},"3":{"title":"主题思想","lead":"培养德智体美劳全面发展的社会主义建设者和接班人。","bullets":["关键词：理想信念、全面发展、时代新人","与单元「志气」主题呼应"]},"4":{"title":"写作手法","lead":"立论典范；概念清晰、层次分明。","bullets":["中心论点鲜明，论述紧扣「全面发展」","适合作为议论文「观点要明确」的范例"]},"5":{"title":"时代背景","lead":"新时代中国特色社会主义教育方针语境。","bullets":["服务于培养担当民族复兴大任的时代新人","与当代青年成长要求直接相关"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：论点迁移、任务群表达、与单元互文。","bullets":["跨文本：与《谈骨气》《创造宣言》列一张「时代新人关键词」对照表（理想信念/骨气/创造），写一句综论。","情境任务：班级辩论「全面发展是否等于平均发展」——正方或反方各写三点，须引用本文中心。","批判质疑：有人把「接班人」窄化为分数——你如何据文反驳？（质疑求证）"]}},"l8":{"id":"l8","title":"8　《中国人失掉自信力了吗》","tag":"鲁迅 · 驳论文","star":false,"dims":{"1":{"title":"情节结构（论证结构）","lead":"揭示靶子 → 直接反驳 → 间接反驳（立论）→ 结论。","bullets":["先指出「他信力」「自欺力」现象，锁定悲观论调","直接反驳：并非失掉自信力，而是发展着「他信力」「自欺力」","立论：有并不失掉自信力的中国人在——「中国的脊梁」","结论：要论中国人，要自己去看地底下"]},"2":{"title":"人物形象（论证者形象）","lead":"鲁迅以犀利洞察者的姿态，讽刺空论者，礼赞「脊梁」。","bullets":["「中国的脊梁」：埋头苦干、拼命硬干、为民请命、舍身求法的人","对手方：散布「失掉自信力」论调者"]},"3":{"title":"主题思想","lead":"驳斥中国人失掉自信力的悲观论调，歌颂「中国的脊梁」。","bullets":["名句：我们从古以来，就有埋头苦干的人……这就是中国的脊梁","辨析：自信力 / 他信力 / 自欺力"]},"4":{"title":"写作手法","lead":"驳立结合；举例、对比；语言犀利讽刺。","bullets":["先破后立，破中有立","「地底下」等比喻指向默默奋斗的民众"]},"5":{"title":"时代背景","lead":"1934年，民族危机加深，社会上弥漫悲观论调。","bullets":["作者：鲁迅。选自杂文集，针对时弊而作","文化语境：批判国民性弱点，同时发现民族力量"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：驳论结构可视化、跨文本脊梁、思辨。","bullets":["结构化：画「敌论→论据批驳→立论（中国脊梁）」思维导图，标出直接反驳与间接反驳。","跨文本：把「中国的脊梁」与《谈骨气》三例、《过零丁洋》文天祥联读，说明「自信力」的历史内涵。","情境：针对一则「唱衰」短视频评论，写80字驳论提纲（仿鲁迅驳论逻辑，不写攻击性人身语）。"]}},"l9":{"id":"l9","title":"9　《谈骨气》","tag":"吴晗 · 立论文","star":true,"dims":{"1":{"title":"情节结构（论证结构）","lead":"提出论点 → 释内涵 → 举例 → 联系现实。","bullets":["开篇：「我们中国人是有骨气的」","引孟子阐释：富贵不能淫，贫贱不能移，威武不能屈","三例：文天祥、不食嗟来之食者、闻一多——角度各异"]},"2":{"title":"人物形象","lead":"三例人物从不同侧面体现「骨气」。","bullets":["文天祥：威武不屈、舍生取义","不食嗟来之食者：贫贱不移","闻一多：民主斗士，宁死不屈"]},"3":{"title":"主题思想","lead":"中国人是有骨气的；骨气是民族精神的重要内涵。","bullets":["与《中国人失掉自信力了吗》对照：一立一驳，同写民族精神"]},"4":{"title":"写作手法","lead":"论点鲜明＋举例论证；三个典型、角度互补。","bullets":["引用名言界定概念，再以事实支撑","结构清晰，便于把握议论文基本框架"]},"5":{"title":"时代背景","lead":"吴晗史学家身份；文章面向青年谈民族气节。","bullets":["作者：吴晗。以历史人物与现代人物并举","文化语境：弘扬民族气节的立论文"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：例证比较、名著/史传勾连、开放评价。","bullets":["跨文本：文天祥例与第六单元《过零丁洋》互证——议论文用例与诗歌抒情如何互补？","比较：三例（饿人/文天祥/闻一多）论证角度有何分工？用表格比「面对什么/选择什么」。","开放：当代「骨气」最需要守住哪一条？结合一则新闻或校园事例，有据表达。"]}},"l10":{"id":"l10","title":"10　《创造宣言》","tag":"陶行知 · 议论文","star":true,"dims":{"1":{"title":"情节结构（论证结构）","lead":"立破结合：先破五种「不能创造」借口，再立创造观。","bullets":["破：环境平凡、生活单调、年纪太小、太无能、陷入绝境等","立：处处是创造之地，天天是创造之时，人人是创造之人","号召以汗、血、热情去创造"]},"2":{"title":"人物形象（论证者形象）","lead":"陶行知作为教育家，以热忱改革者的姿态鼓动创造。","bullets":["隐含对象：教育者与青年——创造「真善美的活人」"]},"3":{"title":"主题思想","lead":"人人、处处、天天都可以创造；教育要创造真善美的活人。","bullets":["名句：处处是创造之地，天天是创造之时，人人是创造之人"]},"4":{"title":"写作手法","lead":"破立结合；排比列举借口再逐一驳斥；号召有力。","bullets":["先破后立，气势贯通","语言鼓动性强，适合朗读"]},"5":{"title":"时代背景","lead":"陶行知生活教育理论语境；近代中国教育改革探索。","bullets":["作者：陶行知。教育家、改革家","文化语境：强调实践与创造的教育思想"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：驳「不能论」、创意宣言、与青年主题互文。","bullets":["跨文本：与《想和做》比——创造需行动；两文如何共同回答「空谈误事」？","情境：为班级「创造周」写一份60字《迷你创造宣言》，须含「处处/人人/时时」之一的化用。","质疑：有人说「学生阶段谈创造太早」——列出反驳两点并各举课文依据。"]}},"l2-extra":{"id":"l2-extra","title":"写作　观点要明确 / 综合性学习　君子自强不息","tag":"","star":false,"dims":{},"simple":"学习要点：写议论文先亮明中心论点，全文不跑题；可用开门见山或由现象引出。综学结合「志气·骨气·底气」，联系《周易》「天行健，君子以自强不息」开展探究与表达。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["把本单元四文论点收成「志气·骨气·底气·创造」四格，备综学发言。","写作：用驳论或立论写200字「观点要明确」小段，话题自选时代新人。","质疑：检查自己作文是否「论点漂移」——仿鲁迅设敌论再驳。"]}},"l11":{"id":"l11","title":"11　《岳阳楼记》","tag":"范仲淹 · 记","star":false,"dims":{"1":{"title":"情节结构","lead":"叙事 → 写景（阴/晴）→ 议论抒情。","bullets":["应滕子京之嘱作文（叙事缘起）","洞庭胜状；阴晴两种览物之情对比","引出「古仁人之心」，收束「先天下之忧而忧，后天下之乐而乐」"]},"2":{"title":"人物形象","lead":"「古仁人」与迁客骚人对照；作者自期以天下为己任。","bullets":["迁客骚人：以物喜、以己悲","古仁人：不以物喜，不以己悲；忧国忧民","作者范仲淹：借作文言志"]},"3":{"title":"主题思想","lead":"先忧后乐；不以物喜、不以己悲的政治理想与人格境界。","bullets":["文眼：先天下之忧而忧，后天下之乐而乐","名句：居庙堂之高则忧其民，处江湖之远则忧其君"]},"4":{"title":"写作手法","lead":"对偶、对比；叙事—写景—议论层层推进。","bullets":["阴晴景色对比引出两种心情，再超越之","骈散结合，气势与韵味并存"]},"5":{"title":"时代背景","lead":"北宋；庆历年间范仲淹应滕子京重修岳阳楼而作。","bullets":["作者：范仲淹。政治家、文学家","文体：「记」——记事写景中寄托议论"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：思想比较、文言迁移、情境表达。","bullets":["跨文本：与《醉翁亭记》比「忧乐」——先天下之忧而忧 vs 与民同乐；同为记体，政治境界同中有异。","结构化：补全「迁客骚人三种心情→古仁人之心→作者自期」导图。","情境：以「岳阳楼重建落成寄语」写一联（上下联），嵌入「忧乐」意但不默写原句。"]}},"l12":{"id":"l12","title":"12　《醉翁亭记》","tag":"欧阳修 · 记","star":false,"dims":{"1":{"title":"情节结构","lead":"以「乐」贯穿：山水之乐 → 宴酣之乐 → 禽鸟之乐 → 游人之乐 → 太守之乐。","bullets":["写亭之位置与得名（醉翁之意不在酒）","四时之景、朝暮变化","宴游与归，点明「与民同乐」"]},"2":{"title":"人物形象","lead":"太守（欧阳修）——与民同乐的地方长官形象。","bullets":["醉翁：自号，暗示寄情山水、与民同乐","宾客、游人、负者：共同构成「乐」的社会图景"]},"3":{"title":"主题思想","lead":"与民同乐；寄情山水而不忘民生。","bullets":["文眼：乐（与民同乐）","名句：醉翁之意不在酒，在乎山水之间也"]},"4":{"title":"写作手法","lead":"「也」字句贯穿；骈散结合；层层衬托。","bullets":["以禽鸟、游人之乐衬太守之乐","「归」等多义词可作考点"]},"5":{"title":"时代背景","lead":"北宋；欧阳修被贬滁州期间所作。","bullets":["作者：欧阳修。唐宋八大家之一","贬谪语境下仍写「乐」，见其胸襟"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：太守形象多角度、比较阅读、创意。","bullets":["跨文本：与《岳阳楼记》比「乐」的内涵——个人寄情山水 vs 心系天下。","换视角：以「滁人」口吻写一段「太守来游」见闻，体现「与民同乐」（创意+人物关系）。","手法功能：分析「醉翁之意不在酒」如何推进「乐」的层层揭示（手法→结构→主题）。"]}},"l13":{"id":"l13","title":"13　《湖心亭看雪》","tag":"张岱 · 小品文","star":true,"dims":{"1":{"title":"情节结构","lead":"大雪三日 → 独往看雪 → 白描写景 → 偶遇金陵客 → 强饮三白。","bullets":["时间：崇祯五年十二月","「天与云与山与水，上下一白」及「一痕、一点、一芥、两三粒」","舟子叹「痴」，余韵悠长"]},"2":{"title":"人物形象","lead":"作者孤高淡泊；金陵客为同调；舟子衬托「痴」。","bullets":["「独」「痴」是人物精神标签","遇客对饮：知音之乐，反衬孤独中的共鸣"]},"3":{"title":"主题思想","lead":"寄孤高淡泊情怀，隐含故国之思。","bullets":["名句：雾凇沆砀……上下一白；莫说相公痴，更有痴似相公者"]},"4":{"title":"写作手法","lead":"白描；量词传神；简笔写意。","bullets":["「一痕、一点、一芥、两三粒」：由远及近、由大到小","文字极简而意境深远"]},"5":{"title":"时代背景","lead":"明末清初；张岱追忆往昔，小品文传统。","bullets":["作者：张岱。《陶庵梦忆》一脉","故国之思融于雪夜独往的意境"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：小品文人设比较、审美开放。","bullets":["跨文本：与岑参《白雪歌》比写雪——一者寂寥空明，一者瑰丽豪迈；比较意象与情感。","多角度：「强饮三大白而别」是孤高还是温暖？选一边，用文本细节支撑。","情境：为湖心亭夜雪写「短视频文案」40字，突出「痴」而不俗套。"]}},"l14a":{"id":"l14a","title":"《行路难》（其一）","tag":"李白 · 乐府诗 · 诗词三首","star":false,"dims":{"1":{"title":"情节结构","lead":"宴饮起兴 → 行路艰难的意象 → 愤懑中奋起信念。","bullets":["金樽清酒、珍羞仍难销愁","冰塞黄河、雪满太行——仕途坎坷的象征","收束：长风破浪会有时，直挂云帆济沧海"]},"2":{"title":"人物形象","lead":"抒情主体李白：政治受挫却不失进取的浪漫诗人。","bullets":["情感：愤懑与自信交织"]},"3":{"title":"主题思想","lead":"仕途艰难中的愤懑，与对未来的坚定信念。","bullets":["必背：长风破浪会有时，直挂云帆济沧海"]},"4":{"title":"写作手法","lead":"象征、对比；乐府旧题写新愁。","bullets":["冰雪塞路象征仕途；长风云帆象征理想"]},"5":{"title":"时代背景","lead":"盛唐；李白政治理想受挫后的抒怀。","bullets":["作者：李白。浪漫主义诗人代表"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：诗圣诗仙互文、信念主题开放。","bullets":["跨文本：与《酬乐天扬州初逢》比「低沉→振作」结构；与《出师表》比「危难中的担当」气质。","开放：「长风破浪会有时」在学业挫折情境下如何理解？避免空喊，联系诗中「冰塞川」「欲渡」。","创意：把「停杯投箸」到「济沧海」画成四格情节卡并各标情感词。"]}},"l14b":{"id":"l14b","title":"《酬乐天扬州初逢席上见赠》","tag":"刘禹锡 · 七律","star":false,"dims":{"1":{"title":"情节结构","lead":"叙贬谪之苦 → 「沉舟」「病树」一转 → 乐观新生。","bullets":["巴山楚水、二十三年——时间与空间的双重隔绝","闻笛、烂柯：物是人非","名句翻出新意：沉舟侧畔千帆过，病树前头万木春"]},"2":{"title":"人物形象","lead":"抒情主体刘禹锡：历经贬谪仍开朗、自信。","bullets":["以「沉舟」「病树」自喻而不消沉"]},"3":{"title":"主题思想","lead":"贬谪感慨中寄托乐观与新生希望。","bullets":["必背：沉舟侧畔千帆过，病树前头万木春"]},"4":{"title":"写作手法","lead":"典故、对比、比喻；酬答诗中见胸襟。","bullets":["以自然新陈代谢喻社会人事更迭"]},"5":{"title":"时代背景","lead":"中唐；刘禹锡长期贬谪后与白居易扬州相逢。","bullets":["作者：刘禹锡。有「诗豪」之称"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：典故结构化、贬谪主题比较。","bullets":["结构化：列出诗中典故（怀旧空吟、翻新曲、病树、沉舟）→各对应哪层意思。","跨文本：与李白《行路难》、苏轼《水调歌头》比「达观」的不同表达。","质疑：有人只背「沉舟侧畔」而忽略「凄凉」——完整情感应如何表述？"]}},"l14c":{"id":"l14c","title":"《水调歌头》（明月几时有）","tag":"苏轼 · 词","star":false,"dims":{"1":{"title":"情节结构","lead":"问月出世 → 转入人间悲欢 → 旷达祝愿。","bullets":["上阕：明月几时有，欲乘风归去又不忍","下阕：月照无眠，人有悲欢离合","收束：但愿人长久，千里共婵娟"]},"2":{"title":"人物形象","lead":"抒情主体苏轼：中秋怀弟，由出世之想归于人间温情。","bullets":["对弟弟苏辙的思念是情感主线"]},"3":{"title":"主题思想","lead":"旷达：承认悲欢离合，祝愿人长久、共婵娟。","bullets":["名句：人有悲欢离合，月有阴晴圆缺；但愿人长久，千里共婵娟"]},"4":{"title":"写作手法","lead":"意象（月）；问答结构；由虚到实、由己及人。","bullets":["月光贯通上下阕，情理交融"]},"5":{"title":"时代背景","lead":"北宋；苏轼中秋望月怀子由（苏辙）。","bullets":["作者：苏轼。豪放词代表，此篇以旷达著称"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：哲理词比较、家国情与人伦情。","bullets":["跨文本：与《岳阳楼记》「不以物喜」对照——旷达是否相同？指出同异。","换视角：以「子由」收信口吻写一则简短回信，回应「但愿人长久」。","主旨多层：标题「水调歌头」与中秋望月——物象义/情感义/哲理义分条写。"]}},"l3-extra":{"id":"l3-extra","title":"写作　议论要言之有据 / 课外古诗词诵读（一）","tag":"","star":false,"dims":{},"simple":"学习要点：观点须有事实、道理等论据支撑，避免空发议论。《月夜忆舍弟》（杜甫）、《长沙过贾谊宅》（刘长卿）、《左迁至蓝关示侄孙湘》（韩愈）、《商山早行》（温庭筠）：以背诵默写、理解思乡贬谪之情为主。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["文言记三篇+诗词三首，做「忧乐/达观」主题联读表。","写作：为「言之有据」找本单元名句作论据示例两条。","比较：《行路难》与《水调歌头》的「振作」路径同异。"]}},"l15":{"id":"l15","title":"15　《故乡》","tag":"鲁迅 · 小说（选自《呐喊》）","star":false,"dims":{"1":{"title":"情节结构","lead":"回乡见闻为线索：萧索故乡 → 会见闰土、杨二嫂 → 离乡希望。","bullets":["今昔对比贯穿全篇","少年闰土的鲜活记忆 vs 中年闰土的隔膜麻木","收束「地上本没有路……」——由个人命运升至社会希望"]},"2":{"title":"人物形象","lead":"闰土、杨二嫂、「我」形成人物对照系统。","bullets":["少年闰土 vs 中年闰土：活泼机敏 → 麻木老实，被生活压弯","杨二嫂：从前「豆腐西施」→ 市侩尖刻，社会风气的侧影","「我」：旁观又同情，渴望新的生活"]},"3":{"title":"主题思想","lead":"批判旧社会对人性的摧残；寄托对「新的生活」的希望。","bullets":["名句：其实地上本没有路，走的人多了，也便成了路","故乡的萧索是社会的缩影"]},"4":{"title":"写作手法","lead":"今昔对比；环境描写烘托；细节刻画人物。","bullets":["闰土的外貌、称呼（「老爷」）变化力透纸背","环境描写渲染气氛与主题"]},"5":{"title":"时代背景","lead":"辛亥革命后的中国农村；选自《呐喊》。","bullets":["作者：鲁迅。批判现实，唤醒国民","作品反映近代中国底层农民的命运"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025小说：结构化情节、人物心理功能、比较互文、批判探究（重点课）。","bullets":["结构化：补全「回乡→见闻→离乡」导图，节点含闰土/杨二嫂/宏儿水生；标「希望」线索的起承转合。","手法→情节：分析「我」对闰土称「老爷」时的心理，说明它如何推进隔膜主题（勿只答「难过」）。","比较互文：与《我的叔叔于勒》比「金钱/身份如何改变亲情关系」；与《简·爱》比「平等与尊严」。","开放：「希望本是无所谓有……」——结合现实「新路」，写一段有文本依据的探究发言。"]}},"l16":{"id":"l16","title":"16　《我的叔叔于勒》","tag":"莫泊桑 · 短篇小说","star":false,"dims":{"1":{"title":"情节结构","lead":"盼于勒 → 赞于勒 → 遇于勒 → 躲于勒；态度随金钱变化。","bullets":["线索：菲利普一家对于勒态度的变化","听说于勒发财时盼、赞；船上发现是穷水手则避之唯恐不及","「我」的旁观串起全篇"]},"2":{"title":"人物形象","lead":"菲利普夫妇虚伪势利；于勒是探针；「我」旁观同情。","bullets":["菲利普夫妇：金钱至上、爱慕虚荣，亲情服从利益","于勒：贫富身份变化的「试金石」，揭露亲情真相","「我」（若瑟夫）：尚存同情与良知的少年视角"]},"3":{"title":"主题思想","lead":"批判资本主义社会金钱至上、亲情淡漠。","bullets":["以小见大：一个家庭的态度剧变折射社会价值观"]},"4":{"title":"写作手法","lead":"对比、心理与神态描写；以小见大。","bullets":["盼/赞 vs 遇/躲形成强烈对比","神态、语言、动作写出势利嘴脸"]},"5":{"title":"时代背景","lead":"19世纪法国资本主义社会；莫泊桑批判现实主义。","bullets":["作者：法国「短篇小说巨匠」莫泊桑","批判拜金主义是其小说常见主题"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025小说示范课：人物态度变化表、叙事视角、批判与创意。","bullets":["结构化：用表格梳理菲利普夫妇对于勒「盼→赞→骂→躲」的态度节点与金钱线索。","视角探究：若改为于勒视角重述「船上相遇」一段（200字内提纲），主题会强化还是削弱？说明理由。","比较：与《故乡》杨二嫂、「我」的家族记忆比——资本主义金钱关系 vs 中国乡土变迁。","情境任务：读书会辩论「若于勒真的发财，菲利普夫妇会怎样」——正反各两点，须扣原文伏笔。"]},"contentNotes":[{"id":"cn-l16-001","title":"于勒与杨二嫂——信任与温情如何被侵蚀","body":"于勒是资本主义社会的失败者：人的价值由钱决定——有钱是亲戚，没钱连亲妈都不敢认，亲情变成交易。《故乡》里的杨二嫂，则折射中国乡村社会变迁中人被物化、标签化，人际关系变质。两篇对照，核心都是人与人之间的信任和温情被侵蚀。复习时可抓住「金钱/身份如何改写亲情与邻里关系」这条比较线。","tags":["比较阅读","于勒","杨二嫂","亲情"],"createdAt":"2026-10-17T13:00:00+08:00"}],"notesEnabled":true,"tasksEnabled":true,"situationalTasks":[{"id":"st-l16-001","title":"读书辩论会——「若于勒真的发财，菲利普夫妇会怎么样？」","prompt":"请结合课文伏笔与人物言行，分正反方各谈两点。每点写清「观点」与「原文依据」，避免空喊口号。","sides":{"pro":[{"claim":"发财后会热情迎接，亲情似乎「恢复」——此前的冷漠主要源于经济压力。","evidence":"依据：听说于勒在美洲发财时，全家人日夜盼他归来、把他写成「福音书」；若瑟夫父母的「希望」与金钱消息同步升温，说明态度变化与「有没有钱」强绑定。若真发财，按同一逻辑，迎接与夸奖会立刻回来。"},{"claim":"年轻一代（如若瑟夫）可能真心欢迎，作品也留出人性善良的一面。","evidence":"依据：船上认出穷水手于勒后，「我」仍偷偷给了他十个铜子的小费，并感到心酸——少年视角尚存同情。辩论可引申：即便父母势利，年轻人未必完全被金钱标准吞没，发财情境下更可能流露真诚欢迎。"}],"con":[{"claim":"即使发财，势利眼光不会变——他们看重的是身份来历与面子，而非真正的亲情。","evidence":"依据：于勒被称作「全家的恐怖」时，是因其败家与拖累；「发财」传说让他变成「好心的于勒」，标签随利益翻转。说明亲情服从于「是否体面、是否有利」，发财只是换了一块更光鲜的标签，本质仍是势利。"},{"claim":"结尾见穷困于勒就躲开，说明金钱标准已内化；发财与否只是表面，遇「不利」仍会划清界限。","evidence":"依据：船长证实卖牡蛎的正是于勒后，菲利普夫妇立刻变脸、下令躲开，生怕被认作亲戚、影响女儿婚事。可见评价标准已内化为「金钱/面子」；即便假设他发财，一旦出现更「不合算」的风险，同样可能抛弃。伏笔（信件、夸赞）与结局（躲避）对照，强化批判。"}]},"createdAt":"2026-10-17T13:05:00+08:00","chatTurns":[{"side":"pro","text":"我说啊，要是于勒真发财了，菲利普夫妇八成会热情迎接——之前那么冷，主要是家里穷、压力大。一听说他在美洲发财，全家就日夜盼、把他写成「福音书」；态度跟着钱走。钱有了，盼和赞那套逻辑不就回来了？"},{"side":"con","text":"别天真。势利是他们的性格和价值观，不是账本算平了就能改。于勒败家时是「全家的恐怖」，传说发财就变「好心的于勒」——标签跟着利益翻。他们看重的是身份、来历和面子，不是真亲情。发财也只是换块更光鲜的标签。"},{"side":"pro","text":"那年轻人呢？若瑟夫（「我」）未必完全被金钱标准同化。船上认出穷水手后，他还偷偷给了十个铜子小费，心里发酸——少年视角里还有同情。就算父母势利，发财情境下年轻人更可能真心欢迎。"},{"side":"con","text":"可结尾他们一确认是穷于勒就躲开，生怕影响女儿婚事——金钱标准早就内化了。发财与否只是表面；一旦「不合算」，照样划清界限。信件里的夸赞和结局的躲避一对照，批判更清楚：即使真发财，也未必真正尊重他这个人。"}]}]},"l17":{"id":"l17","title":"17　《孤独之旅》","tag":"曹文轩 · 小说（节选自《草房子》）","star":true,"dims":{"1":{"title":"情节结构","lead":"家道中落 → 随父放鸭 → 芦荡孤独 → 暴风雨考验 → 成长领悟。","bullets":["空间：空旷芦荡；事件：放鸭与暴风雨","心理线：胆怯娇弱 → 坚韧独立"]},"2":{"title":"人物形象","lead":"杜小康：在孤独与磨难中成长的少年。","bullets":["父亲：生活压力下的监护者，促成「孤独之旅」","鸭群、暴风雨：既是环境，也是成长的「对手」与「老师」"]},"3":{"title":"主题思想","lead":"孤独是成长的催化剂；少年在磨难中走向坚韧。","bullets":["成长主题鲜明：离开依赖，学会独自面对"]},"4":{"title":"写作手法","lead":"环境烘托心理；细腻心理描写。","bullets":["鸭群、芦荡、暴风雨与人物心境相互映照"]},"5":{"title":"时代背景","lead":"当代儿童文学；曹文轩《草房子》一脉。","bullets":["作者：曹文轩。注重美育与成长叙事","乡土少年成长的文学语境"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：成长母题、环境功能、整本书勾连。","bullets":["手法→情节：暴风雨场景如何推动杜小康「长大」？答「环境描写→心理/行动→成长主题」。","跨文本/名著：与《草房子》其他章节或《童年》比「苦难中的成长」；与《故乡》宏儿一代「新路」互文。","创意：以杜雍和日记写一则「看儿子扛过暴风雨后」的50字心情（人物关系）。"]}},"l18":{"id":"l18","title":"18　《蒲柳人家》（节选）","tag":"刘绍棠 · 乡土小说","star":true,"dims":{"1":{"title":"情节结构","lead":"以何满子为视角，串联一丈青大娘、何大学问等人物故事。","bullets":["情节相对松散，重在人物群像与民俗场景","京东北运河边的日常生活片段"]},"2":{"title":"人物形象","lead":"人物群像：淳朴善良、重情仗义。","bullets":["何满子：顽皮孙儿视角","一丈青大娘：泼辣爽利、护短仗义","何大学问：好面子、讲义气的祖父形象"]},"3":{"title":"主题思想","lead":"赞美乡土温情与侠义品格。","bullets":["民风淳朴、重情重义是节选的情感底色"]},"4":{"title":"写作手法","lead":"乡土语言；民俗色彩；夸张与传神外号。","bullets":["「一丈青」「何大学问」等名号本身即人物速写"]},"5":{"title":"时代背景","lead":"京东北运河乡土社会；刘绍棠乡土文学。","bullets":["作者：刘绍棠。当代乡土小说代表之一","文化语境：运河边的市井与人情"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：乡土人物群像、语言品味、比较。","bullets":["比较：与《故乡》乡土写照比——批判沉重 vs 温情幽默；选一组人物关系说明。","人物细读：何满子视角的作用？换成全知会失去什么？（叙事功能）","情境：向同学「推荐节选中最有味的一段对话」，说明语言如何写活人物（语言品味类）。"]}},"l4-extra":{"id":"l4-extra","title":"写作　学写小小说 / 整本书阅读　《简·爱》","tag":"","star":false,"dims":{},"simple":"学习要点：抓住人物、情节、环境三要素，情节集中、结尾可留余味。《简·爱》：关注人物成长、平等爱情观与叙事；按「怎样读外国小说」做批注与专题讨论。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["按中考八类设问（叙事/人物/语言/手法/主旨/比较/情境/批判）各出一题考《故乡》或《于勒》。","整本书：《简·爱》用「比」谈平等观与《故乡》「希望」。","创意：写200字小小说，结尾留白，同学互做「续写题」。"]}},"l19":{"id":"l19","title":"19　《想和做》","tag":"胡绳 · 议论文","star":false,"dims":{"1":{"title":"情节结构（论证结构）","lead":"现象引入 → 提出论点 → 辩证分析 → 联系学习实际。","bullets":["针对「空想」与「死做」两种偏向","中心论点：想和做是分不开的，一定要联结起来","强调从实际出发，一面做一面想"]},"2":{"title":"人物形象（论证者形象）","lead":"论述者以理性分析者姿态，纠正偏颇，指导青年学习与实践。","bullets":["隐含对象：容易空想或死做的学习者"]},"3":{"title":"主题思想","lead":"想和做一定要联结起来。","bullets":["反对只想不做、只做不想","与学习生活紧密挂钩"]},"4":{"title":"写作手法","lead":"举例、对比（如学游泳）；辩证分析。","bullets":["先摆现象再立论，论证贴近生活"]},"5":{"title":"时代背景","lead":"现代议论文；强调理论联系实际的思想方法。","bullets":["作者：胡绳。学者、思想家","文化语境：培养正确的知行观"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：思辨迁移、与创造宣言互文。","bullets":["跨文本：与《创造宣言》《怀疑与学问》串成「想—疑—做—创」链条，画四字导图。","情境：针对「只刷题不总结」现象，写一段「想和做」式劝学短评（80字）。","质疑：有人说「想得越多越耽误做」——如何据文澄清「空想」与「想清楚再做」？"]}},"l20":{"id":"l20","title":"20　《怀疑与学问》","tag":"顾颉刚 · 议论文","star":false,"dims":{"1":{"title":"情节结构（论证结构）","lead":"引名言立中心论点 → 两个分论点展开。","bullets":["中心：治学必须有怀疑精神","分论点①：怀疑是辨伪去妄的必要步骤（消极辨伪）","分论点②：怀疑是建设新学说、启迪新发明的基本条件（积极创新）"]},"2":{"title":"人物形象（论证者形象）","lead":"顾颉刚以史学家、学问家身份谈治学态度。","bullets":["举例中的戴震等：善于怀疑、追问的求学者形象"]},"3":{"title":"主题思想","lead":"治学须有怀疑精神：既辨伪去妄，又推动创新。","bullets":["关键词：辨伪去妄、墨守、虚妄"]},"4":{"title":"写作手法","lead":"引用、举例（三皇五帝、腐草为萤、戴震）、对比。","bullets":["中心论点+分论点结构清晰，便于模仿"]},"5":{"title":"时代背景","lead":"近代学术转型语境；顾颉刚古史辨派相关思想背景。","bullets":["作者：顾颉刚。史学家","强调独立思考、不盲从的学问态度"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：批判质疑题型本课即方法、跨学科。","bullets":["方法迁移：用本文「怀疑→辨伪→新知」步骤，设计对一则网络「历史冷知识」的三问求证路径。","跨文本：与鲁迅驳论比——怀疑精神如何既破又立？","开放：学问中的「怀疑」与生活中的「疑神疑鬼」界限何在？举课文原理论述。"]}},"l21":{"id":"l21","title":"21　《就英法联军远征中国致巴特勒上尉的信》","tag":"雨果 · 书信","star":true,"dims":{"1":{"title":"情节结构","lead":"先扬后抑：赞美圆明园 → 谴责劫掠焚毁 → 表明正义立场。","bullets":["开篇盛赞圆明园为世界奇迹","中段愤怒揭露英法联军的强盗行径","收束同情中国、护文明、反侵略"]},"2":{"title":"人物形象（论证者形象）","lead":"雨果：富有良知的法国作家，站在正义一边反对本国侵略。","bullets":["巴特勒上尉：收信对象，代表殖民征服逻辑（被反讽）"]},"3":{"title":"主题思想","lead":"反侵略、护文明、国际正义；同情中国人民。","bullets":["强盗逻辑与人类文明价值的对立"]},"4":{"title":"写作手法","lead":"先扬后抑、对比；反语与讽刺。","bullets":["盛赞越深，谴责越有力","书信体便于直接表明立场"]},"5":{"title":"时代背景","lead":"第二次鸦片战争后；英法联军劫掠焚毁圆明园。","bullets":["作者：法国浪漫主义作家雨果（《巴黎圣母院》《悲惨世界》）","1861年前后致信谴责远征"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：比较阅读、正义立场、批判表达。","bullets":["比较：雨果对圆明园的赞美与对劫掠的怒斥——同一封信中的「美」与「耻」如何并置更有力？","跨文本：与《中国人失掉自信力了吗》比「民族尊严」的不同写法（诗性书信 vs 驳论）。","情境：博物馆讲解员向外国游客介绍圆明园遗址，写60字讲解词，须含「文明与强盗」辩证（创意表达）。"]}},"l22":{"id":"l22","title":"22　《精神的三间小屋》","tag":"毕淑敏 · 议论文","star":true,"dims":{"1":{"title":"情节结构（论证结构）","lead":"提出「三间小屋」比喻 → 分述爱憎、事业、自身 → 强调精神健全。","bullets":["小屋一：盛着爱与恨","小屋二：盛着事业","小屋三：盛着自身"]},"2":{"title":"人物形象（论证者形象）","lead":"毕淑敏以医生兼作家的细腻与关怀，劝导关注内心建设。","bullets":["隐含读者：现代社会中精神易荒芜的普通人"]},"3":{"title":"主题思想","lead":"构建健康、丰盈的精神世界。","bullets":["物质之外，更需精神家园"]},"4":{"title":"写作手法","lead":"比喻说理（小屋）；排比与形象化议论。","bullets":["抽象精神问题形象化，易于理解与记忆"]},"5":{"title":"时代背景","lead":"当代散文/议论文；关注现代人精神生活。","bullets":["作者：毕淑敏。作家、从事过医学工作","文化语境：现代社会的心灵关怀"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：隐喻结构化、精神主题开放、数字时代勾连。","bullets":["结构化：三间小屋各装什么、防什么——补全对照表，并写「第四间」你会装什么（开放+依据）。","跨文本：与《想和做》比「精神建设也需行动」；与综学「数字时代」比信息过载如何挤占小屋。","创意：为「爱的小屋」写三条「入住公约」，对应文中警示。"]}},"l5-extra":{"id":"l5-extra","title":"写作　论证要合理 / 综合性学习　我们的数字时代","tag":"","star":false,"dims":{},"simple":"学习要点：论据真实典型，论证合乎逻辑，避免绝对化与跑偏。综学围绕数字生活利弊、信息素养等开展调查与表达。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["《怀疑与学问》方法用于综学「数字信息」求证。","写作：检查论证「绝对化」病句并改写。","比较：雨果书信与驳论文的说服力来源同异。"]}},"l23":{"id":"l23","title":"23　《曹刿论战》","tag":"《左传》","star":false,"dims":{"1":{"title":"情节结构","lead":"战前（论何以战）→ 战时 → 战后（论所以胜）。","bullets":["曹刿请见，问「何以战」，强调取信于民","长勺之战：下视其辙、登轼而望，而后追","事后论「夫战，勇气也」——一鼓作气"]},"2":{"title":"人物形象","lead":"曹刿：政治远见＋军事才能；对照「肉食者鄙」。","bullets":["曹刿：民间智者，远谋优于当权者","鲁庄公：能纳谏，但见识有限","名言：「肉食者鄙，未能远谋」"]},"3":{"title":"主题思想","lead":"取信于民是胜战之本；作战讲究士气与时机。","bullets":["名句：一鼓作气，再而衰，三而竭；小大之狱……必以情"]},"4":{"title":"写作手法","lead":"对话推进情节；详略得当（详论略战）。","bullets":["战前战后议论详，战场描写略而精","实词：间、鄙、牺牲、狱、伐、驰等"]},"5":{"title":"时代背景","lead":"春秋齐鲁长勺之战；《左传》记事传统。","bullets":["史传散文，记言记事并重","文化语境：民本思想与军事智慧"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025文言：战事结构化、人物对照、迁移现实。","bullets":["结构化：战前/战中/战后三栏导图，标注「肉食者鄙」「一鼓作气」位置。","比较：曹刿与邹忌——同为「进言」，一论战一讽谏，策略有何同异？","开放：「取信于民」对今天班级/社团管理有何启发？一句话联系文意。"]}},"l24":{"id":"l24","title":"24　《邹忌讽齐王纳谏》","tag":"《战国策》","star":true,"dims":{"1":{"title":"情节结构","lead":"比美悟理 → 讽谏齐王 → 下令赏谏 → 四国朝齐。","bullets":["三问三答：妻、妾、客美我之故不同","由家及国：私我、畏我、有求于我 → 宫妇、朝臣、四境","三赏：上中下赏，广开言路见效"]},"2":{"title":"人物形象","lead":"邹忌：善于设喻、委婉讽谏；齐王：能纳谏的明君形象。","bullets":["妻、妾、客：分别对应私、畏、有求——人情之蔽"]},"3":{"title":"主题思想","lead":"广开言路、修明政治；讽谏艺术与纳谏胸襟。","bullets":["名句：吾妻之美我者，私我也……"]},"4":{"title":"写作手法","lead":"设喻讽谏；三问三答、三比、三赏的整齐结构。","bullets":["由家事推及国事，以小喻大"]},"5":{"title":"时代背景","lead":"战国策士文化；《战国策》记纵横捭阖与讽谏故事。","bullets":["文体：史传文言中的讽谏名篇","文化语境：兼听则明的政治智慧"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：讽谏策略比较、推理链条。","bullets":["结构化：私→公→王「三问」类比推理画箭头，标「蔽」字如何贯穿。","比较：与《出师表》进言对象、语气、目的同异。","情境：仿邹忌「由家喻国」结构，写一则校园「防偏听」微故事提纲（创意）。"]}},"l25":{"id":"l25","title":"25　《陈涉世家》","tag":"司马迁《史记》","star":true,"dims":{"1":{"title":"情节结构","lead":"佣耕立志 → 失期当斩 → 谋划举事 → 篝火狐鸣、渔腹丹书 → 斩尉起义称王。","bullets":["起义原因：失期法皆斩＋苛政","口号：王侯将相宁有种乎","策略：制造舆论、发动戍卒"]},"2":{"title":"人物形象","lead":"陈胜：胸怀大志、有勇有谋；吴广配合举事。","bullets":["名句：燕雀安知鸿鹄之志哉","佣者笑之 vs 鸿鹄之志——志向对照"]},"3":{"title":"主题思想","lead":"歌颂反抗暴政的勇气与智慧；出身不是命运的铁律。","bullets":["「世家」体例用于陈涉，体现司马迁的史识"]},"4":{"title":"写作手法","lead":"记言记事；细节（丹书、狐鸣）写谋略；对比。","bullets":["语言简洁有力，人物声口毕现"]},"5":{"title":"时代背景","lead":"秦末农民起义；司马迁《史记》纪传体。","bullets":["作者：司马迁。纪传体通史开创者","文化语境：暴政与反抗、历史人物评价"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：起义逻辑、人物群像、名句思辨。","bullets":["跨文本：「王侯将相宁有种乎」与《中国人失掉自信力了吗》「脊梁」——反抗与自信如何对话？","人物：陈胜/吴广分工与「诈自称公子扶苏」策略——评价其利弊（批判探究，有据）。","结构化：起义导火索→动员→口号→胜利，补全因果链。"]}},"l26":{"id":"l26","title":"26　《出师表》","tag":"诸葛亮 · 表","star":false,"dims":{"1":{"title":"情节结构","lead":"分析形势 → 提建议 → 叙身世 → 表决心。","bullets":["劝刘禅：广开言路、赏罚公平、亲贤远佞","自叙：布衣→先帝三顾→托孤→北伐","情感主线：报先帝而忠陛下"]},"2":{"title":"人物形象","lead":"诸葛亮：忠贞、勤勉、深谋远虑的人臣典范。","bullets":["先帝刘备：知遇与托孤的象征","刘禅：被劝谏的对象，需亲贤远佞"]},"3":{"title":"主题思想","lead":"劝谏＋陈情；北定中原、兴复汉室的决心。","bullets":["名句：亲贤臣，远小人；受任于败军之际，奉命于危难之间","「表」：古代向帝王陈情言事的文体"]},"4":{"title":"写作手法","lead":"叙事、议论、抒情交融；骈散结合；情真意切。","bullets":["反复提及「先帝」，情感与说理一体"]},"5":{"title":"时代背景","lead":"三国蜀汉；诸葛亮北伐前上表后主刘禅。","bullets":["作者：诸葛亮。政治家、军事家","文化语境：忠义与家国情怀的经典表达"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：陈情与劝谏、忠义主题互文。","bullets":["比较：与曹刿、邹忌比「进言」——表文情理交融的独特处。","跨文本：与《过零丁洋》比「忠」——一者辅幼主北伐，一者殉国明志。","开放：有人评诸葛亮「愚忠」——你如何据「亲贤远佞」「北定中原」作有据回应？"]}},"l27a":{"id":"l27a","title":"《十五从军征》","tag":"汉乐府 · 诗词曲五首","star":false,"dims":{"1":{"title":"情节结构","lead":"少小从军 → 八十始归 → 家园荒芜 → 烹谷泪下。","bullets":["时间跨度极大，控诉兵役残酷","归乡见「兔从狗窦入」等荒凉景象"]},"2":{"title":"人物形象","lead":"老兵：一生被兵役吞噬，归乡已是物是人非。","bullets":["乡里人：侧面交代亲人无存"]},"3":{"title":"主题思想","lead":"控诉兵役制度对普通人生命的摧残。","bullets":["必背：十五从军征，八十始得归"]},"4":{"title":"写作手法","lead":"白描；以景写情；乐府叙事传统。","bullets":["家园荒凉细节胜于直接哭诉"]},"5":{"title":"时代背景","lead":"汉乐府民歌；反映汉代兵役与民生。","bullets":["文体：乐府诗，感于哀乐、缘事而发"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：乐府叙事、战争与民生主题比较。","bullets":["跨文本：与《山坡羊·潼关怀古》比——兵役个人悲剧 vs 兴亡百姓苦；同写民间苦难。","换视角：以「乡里人」答问写4句，侧面补全亲人所终（创意）。","主旨探究：标题「十五从军征」若改为「八十归乡」侧重点如何变？"]}},"l27b":{"id":"l27b","title":"《白雪歌送武判官归京》","tag":"岑参 · 边塞诗","star":false,"dims":{"1":{"title":"情节结构","lead":"奇寒雪景 → 中军置酒 → 送别上路 → 雪满弓刀、山回路转。","bullets":["开篇「忽如一夜春风来，千树万树梨花开」化寒为美","收束望君去向，余情不绝"]},"2":{"title":"人物形象","lead":"抒情主体：边塞送别的友人；武判官为归京者。","bullets":["情感：豪迈中有惜别"]},"3":{"title":"主题思想","lead":"边塞雪景中的送别豪情。","bullets":["名句：忽如一夜春风来，千树万树梨花开；山回路转不见君……"]},"4":{"title":"写作手法","lead":"比喻新奇；边塞意象；送别诗结构。","bullets":["以梨花喻雪，想象瑰丽"]},"5":{"title":"时代背景","lead":"盛唐边塞；岑参两次出塞的军旅经验。","bullets":["作者：岑参。边塞诗代表诗人"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：边塞送别、比喻功能、比较。","bullets":["手法功能：「梨花」喻雪如何既写景又蓄送别豪情？（手法→氛围→情感）","比较：与《行路难》比「寒」与「志」——边塞送友 vs 功业受阻。","创意：给武判官写一句「折雪为花」式临别赠语（10字内）。"]}},"l27c":{"id":"l27c","title":"《南乡子·登京口北固亭有怀》","tag":"辛弃疾 · 词","star":false,"dims":{"1":{"title":"情节结构","lead":"登临怀古 → 千古兴亡 → 赞孙权 → 讽时抒慨。","bullets":["「何处望神州」起兴","「生子当如孙仲谋」收束，寓今昔对比"]},"2":{"title":"人物形象","lead":"抒情主体辛弃疾：英雄失意、报国难酬；孙权为历史对照。","bullets":["孙权：年少有为的英主，反衬当下"]},"3":{"title":"主题思想","lead":"怀古赞孙权，抒报国难酬之慨。","bullets":["名句：千古兴亡多少事……；生子当如孙仲谋"]},"4":{"title":"写作手法","lead":"用典、对比；登临怀古的词体传统。","bullets":["借古人酒杯，浇胸中块垒"]},"5":{"title":"时代背景","lead":"南宋；北固亭登临，中原未复。","bullets":["作者：辛弃疾。豪放词人，有抗金经历"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：怀古用典、与文天祥气节互文。","bullets":["比较：与《过零丁洋》、辛弃疾其他登临词比「报国」抒情策略。","质疑：「生子当如孙仲谋」是否在骂当朝？谈谈你的有据理解（允许多元）。","结构化：望神州→兴亡→孙权→讽今，标情感升温点。"]}},"l27d":{"id":"l27d","title":"《过零丁洋》","tag":"文天祥 · 七律","star":false,"dims":{"1":{"title":"情节结构","lead":"回顾身世与国难 → 零丁洋上的危急 → 以死明志。","bullets":["「山河破碎」「身世浮沉」对仗起","收束：人生自古谁无死？留取丹心照汗青"]},"2":{"title":"人物形象","lead":"抒情主体文天祥：国破身俘仍持节的忠烈形象。","bullets":["「丹心」是人格的核心象征"]},"3":{"title":"主题思想","lead":"视死如归、忠贞报国；气节高于生命。","bullets":["必背：人生自古谁无死？留取丹心照汗青"]},"4":{"title":"写作手法","lead":"对仗工整；直抒胸臆；意象沉痛而卓绝。","bullets":["「干戈寥落」「风雨」等意象写危难中的坚贞"]},"5":{"title":"时代背景","lead":"南宋末年；文天祥抗元被俘过零丁洋。","bullets":["作者：文天祥。民族英雄、政治家、诗人","与《谈骨气》中的文天祥例可对照复习"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：气节互文、与《谈骨气》联读（高频）。","bullets":["名著/课文联读：吴晗引文天祥例 ↔ 本诗「丹心」——议论文论据与诗歌原作如何互证？","开放：「人生自古谁无死」是否鼓励莽撞赴死？结合全诗「干戈」「零丁」谈限定条件。","创意：为「丹心照汗青」设计枚徽章文案（6字）并一句释义。"]}},"l27e":{"id":"l27e","title":"《山坡羊·潼关怀古》","tag":"张养浩 · 元曲","star":false,"dims":{"1":{"title":"情节结构","lead":"写潼关形胜 → 怀古意绪 → 点出兴亡皆苦百姓。","bullets":["峰峦、波涛、山河表里——空间雄浑","秦汉宫阙、兴亡变迁","曲眼：兴，百姓苦；亡，百姓苦"]},"2":{"title":"人物形象","lead":"抒情主体：心系苍生的怀古者；百姓是主题的真正主体。","bullets":["宫阙、帝王：兴亡的表象；百姓：兴亡的实质承受者"]},"3":{"title":"主题思想","lead":"无论王朝兴亡，受苦的都是百姓。","bullets":["必背：兴，百姓苦；亡，百姓苦"]},"4":{"title":"写作手法","lead":"怀古；对比；卒章见志。","bullets":["元曲短小，末句力重千钧"]},"5":{"title":"时代背景","lead":"元代；张养浩途经潼关有感而作。","bullets":["作者：张养浩。元散曲代表作家","文体：元曲怀古名篇"]}},"simple":null,"d6":{"title":"多角度解读","lead":"对齐2025：曲眼卒章、民生主题比较。","bullets":["跨文本：与《岳阳楼记》忧乐、《十五从军征》比——士大夫忧民 vs 曲家直言百姓苦。","主旨多层：「兴，百姓苦；亡，百姓苦」——否定的是什么历史观？","情境：历史课小组发言：用本曲一句作「研究历史的立场」引言，并解释。"]}},"l6-extra":{"id":"l6-extra","title":"写作　学会深入思考 / 整本书阅读　《唐诗三百首》 / 课外古诗词诵读（二）","tag":"","star":false,"dims":{},"simple":"学习要点：透过现象看本质，多问「为什么」「说明了什么」。《唐诗三百首》：按题材/诗人/意象分类读。《咸阳城东楼》（许浑）、《无题》（李商隐）、《浣溪沙》（秦观）、《丑奴儿·书博山道中壁》（辛弃疾）：以背诵与情感把握为主。文言复习：整理通假、古今异义、一词多义、词类活用、特殊句式；名句默写注意形近字；可做人物对比卡（曹刿/邹忌/诸葛亮/陈胜的「远谋」）。","d6":{"title":"多角度解读","lead":"对齐2025：综合理解·跨文本·创意表达。","bullets":["人物对比卡：曹刿/邹忌/陈胜/诸葛亮的「远谋」各一句。","《唐诗三百首》用「比」读两首边塞或怀古。","深入思考：任选本单元一句名句，写「现象→本质」三层追问。"]}}},"zhongkao":{"meta":{"title":"中考小说阅读：五年趋势与新分类","subtitle":"2021–2025 · 与五维解读并列的备考板块","audience":"初三师生","scopeNote":"中考分省命题，无全国统一卷。下列为多地公开评析与备考资料归纳的共性趋势；标注「地区」的条目为个例。","updated":"2026-10-17","timezone":"Asia/Shanghai","disclaimer":"不编造真题原文；开放题示例为设问范式，非默写某年原题。"},"overviewTable":[{"year":2021,"textFeatures":"微型小说/记叙短篇；亲情、边防、成长等题材多见","commonTypes":["情节梳理","人物形象","词句赏析","段落作用","主旨/标题"],"scoreRange":"约14–18分，4–5题","trendKeywords":["三要素稳考","情境创设萌芽","主人公探究（广东个例）"]},{"year":2022,"textFeatures":"时代气息强的小说或文学性记叙；跨学科素材偶现","commonTypes":["传统考点","零星选择题","跨学科综合"],"scoreRange":"约15–17分（广东文学类约15分属结构改革）","trendKeywords":["双减稳中有变","名著入综合运用","跨学科融合"]},{"year":2023,"textFeatures":"乡村教育、家庭温情、成长母题；小小说为主","commonTypes":["情节表格","细节与人物","环境作用","主题探究","情境任务"],"scoreRange":"约15–20分，5–6题","trendKeywords":["情境任务增多","开放题赋分上升"]},{"year":2024,"textFeatures":"乡土坚守、代际沟通、生活场景；革命文化联读偶现","commonTypes":["心理变化","环境烘托主题","名著联读","续写/感悟"],"scoreRange":"约15–20分","trendKeywords":["情境化","开放性","名著勾连"]},{"year":2025,"textFeatures":"乡村人情与科技、人与自然、传统文化物象；仍以短篇为主","commonTypes":["结构化梳理/思维导图","心理描写推动情节","象征","比较阅读联动","批判求证"],"scoreRange":"约15–20分（多数地区）","trendKeywords":["课标任务群显性落地","结构化思维","整卷联动整本书与思辨"]}],"diff2025":{"summary":"底盘仍是情节·人物·语言·主题；外壳更课标化、任务化、结构化。整本书/比较/批判常在名著或综合板块与小说阅读联动，不宜说成「全国小说题全部换题型」。","points":[{"id":"structured-thinking","title":"结构化思维过程加重","detail":"浙江近三年文学类约15–17分；2025小说题强调象征与思维导图补全，公开分析概括为从内容理解向结构化思维升级。","scope":"浙江卷趋势（个例可推方向，非全国一律）","sources":["https://max.book118.com/html/2025/1225/8051047044010026.shtm"]},{"id":"technique-in-plot","title":"手法题强调「在情节中的功能」","detail":"上海教育考试院专家点评：现代文阅读一引导分析心理描写在情节发展中的作用，并透过诗性画面理解主题。","scope":"上海官方权威个例","sources":["https://www.shmeea.edu.cn/page/03500/20250615/19510.html","https://m.shedunews.sh.cn/msite_4/con/2025-06/14/content_26581.html"]},{"id":"task-groups-linkage","title":"任务群联动：比较、整本书、质疑求证","detail":"上海卷覆盖文学性阅读与创意表达、思辨、整本书等任务群；现代文二比较材料表达差异；综合运用强调敢于质疑、多方求证。重庆2025首次系统考新闻（情境任务），难度大致持平——说明整卷阅读生态在变。","scope":"上海为官方表述；重庆创新点偏实用类/新闻，非专指小说","sources":["https://www.shmeea.edu.cn/page/03500/20250615/19510.html","https://cqrb.cn/PCruiping/2025-06-12/2312783_pc.html","https://news.qq.com/rain/a/20250626A088L900"]},{"id":"situational-open-gradual","title":"情境任务与开放探究升温（渐进而非突变）","detail":"广东2020起已有情境创设，2021主人公探究，2022跨学科与分值调整；2023–2025全国备考共识是情境化与开放题面更广。2025是课标落地高点之一，不是「突然换卷」。","scope":"多地渐进；广东改革较早","sources":["https://www.zxxk.com/soft/43994904.html","https://www.jczhijia.com/art/16195.html","https://www.zxxk.com/soft/50981023.html"]}]},"categories":[{"id":"narrative","name":"叙事梳理","shortName":"情节·线索·结构","colorHint":"amber","what":"事件先后、线索、转折、伏笔回收、叙述顺序；近年含思维导图式结构化梳理。","typicalQuestions":["按提示补全情节表格/流程图","梳理××的变化过程（起因—发展—转折—结局）","补全思维导图中的空缺节点并说明依据"],"answerStrategy":"用「人物+事件+结果」概括；抓线索词与转折句；导图题分清上下位关系与因果。","heat":"up","heatLabel":"升","yearNotes":"2021–2024表格填空已常见；2025浙江等强调思维导图/结构化。"},{"id":"character","name":"人物细读","shortName":"形象·心理·关系","colorHint":"terracotta","what":"性格品质、心理变化、次要人物作用、人物关系；心理题常绑定情节功能。","typicalQuestions":["概括××的形象特点并举例","分析某处心理描写的作用（表现内心+推动情节）","次要人物在文中有何作用"],"answerStrategy":"言行神态→性格词；心理描写答「写什么+对情节/主题的作用」，避免只写「内心活动丰富」。","heat":"steady-up","heatLabel":"稳中升","yearNotes":"上海2025官方明确考心理描写在情节发展中的作用。"},{"id":"language","name":"语言品味","shortName":"词句·描写","colorHint":"olive","what":"关键词表达效果、句段描写、语言风格（质朴/幽默/含蓄等）。","typicalQuestions":["加点词有何表达效果","赏析划线句子（修辞/描写/句式）","比较两个词语哪一个更有表现力并说明理由"],"answerStrategy":"手法或词性→写出内容→落到情感/人物/氛围；忌空喊「生动形象」。","heat":"steady","heatLabel":"稳","yearNotes":"五年持续高频，是得分基本盘。"},{"id":"technique","name":"手法与物象","shortName":"象征·对比·环境","colorHint":"rust","what":"象征、对比、伏笔、环境描写、核心物象对主题的深化。","typicalQuestions":["××有何象征意义","环境描写在文中的作用","对比/伏笔手法的表达效果"],"answerStrategy":"指出手法→结合文意→落到人物心理、情节推进或主题深化。","heat":"up","heatLabel":"升","yearNotes":"2025象征、环境「为主题服务」在多地备考中被强调。"},{"id":"theme","name":"主旨与标题","shortName":"主题·意蕴","colorHint":"brown","what":"主题概括、标题多层含义、作者情感态度。","typicalQuestions":["概括小说主题/主旨","探究标题的多重意蕴","作者对××人物或现象持怎样的态度"],"answerStrategy":"表层故事+深层道理；标题常分物象义、情感义、主题义三层。","heat":"steady","heatLabel":"稳","yearNotes":"开放式主旨解读略增，但仍需文本依据。"},{"id":"compare","name":"比较互文","shortName":"对照·勾连","colorHint":"teal","what":"两则材料表达差异、课内外勾连、名著人物或主题对照。","typicalQuestions":["比较两则材料在表达上的差异","由文中语句联想到哪篇课文/哪部名著，并简述理由","用「比」的方法谈谈对人物或主题的理解"],"answerStrategy":"先定可比点（内容、手法、情感、文体），再双向对照；忌只写一边。","heat":"up","heatLabel":"升","yearNotes":"常出现在实用类/文言/名著；上海2025现代文二明确比较材料表达差异。"},{"id":"situational","name":"情境任务与创意表达","shortName":"任务·创意","colorHint":"gold","what":"在读书会、讨论课、专题探究等真实情境中完成任务；续写、推荐、辩论等创意表达。","typicalQuestions":["假如你是阅读课讨论的主持人，请结合文本发言","续写故事结局并说明理由","结合文本就××话题提出自己的看法"],"answerStrategy":"先完成任务指令，再紧扣文本；创意合理且有文本依据。","heat":"up","heatLabel":"升","yearNotes":"广东2020起已有；2023–2025面更广。对应课标「文学性阅读与创意表达」。"},{"id":"critical","name":"批判质疑与开放探究","shortName":"质疑·探究","colorHint":"slate","what":"多角度评价、质疑求证、辩论式作答、个性化但有据的解读。","typicalQuestions":["你是否同意某人的看法？请说明理由","对文中现象提出疑问并给出探究路径","结合文本与现实，谈谈你的认识"],"answerStrategy":"观点鲜明+文本证据+（必要时）联系现实；允许多元，须自圆其说。","heat":"up","heatLabel":"升","yearNotes":"上海2025综合运用强调敢于质疑、多方求证；思辨任务群驱动。"}],"stableCore":["情节概括","人物形象与心理","环境作用","词句赏析","主旨/标题探究"],"scoreNote":"单篇文学类/小说阅读常见4–6题、约15–20分；各地总分结构不同，以当地说明为准。","studyTips":["每周一篇短小说，按八类分类自问，不局限于传统五维。","手法题练三步：描写/象征 → 情节功能 → 主题。","自己画情节导图与人物关系图，适应结构化设问。","名著用「比」：人物关系、主题异同、阅读方法。","开放题坚持「文本依据+个人观点」，避免空喊口号。"],"regionalNotes":[{"region":"上海","year":2025,"note":"官方：心理描写推动情节；任务群全覆盖；比较阅读+质疑求证。","url":"https://www.shmeea.edu.cn/page/03500/20250615/19510.html"},{"region":"浙江","year":"2023–2025","note":"公开分析：结构化思维、思维导图、象征；批注式阅读。","url":"https://max.book118.com/html/2025/1225/8051047044010026.shtm"},{"region":"广东","year":"2020–2022","note":"情境创设、主人公探究、跨学科；2022文学类约15分。","url":"https://www.zxxk.com/soft/43994904.html"},{"region":"广州","year":2024,"note":"官方专家：真实情境、名著比较互证、文学审美。","url":"https://jyj.gz.gov.cn/gk/zfxxgkml/ywgz/zsks/content/post_9738644.html"},{"region":"重庆","year":2025,"note":"官方：情境任务、首次考新闻；难度大致持平。","url":"https://cqrb.cn/PCruiping/2025-06-12/2312783_pc.html"},{"region":"北京","year":2025,"note":"名著整本书方法与比较；记叙文侧重阅读过程与策略（未必年年考小说体裁）。","url":"https://news.qq.com/rain/a/20250626A088L900"}],"sources":[{"title":"上海市教育考试院：专家点评2025上海中考语文","url":"https://www.shmeea.edu.cn/page/03500/20250615/19510.html","type":"official"},{"title":"上海教育新闻网：2025上海中考语文专家点评","url":"https://m.shedunews.sh.cn/msite_4/con/2025-06/14/content_26581.html","type":"official-media"},{"title":"腾讯/新闻晨报：上海考试院发布专家点评","url":"https://news.qq.com/rain/a/20250614A07I3100","type":"media"},{"title":"重庆日报：2025中考语文试卷解读","url":"https://cqrb.cn/PCruiping/2025-06-12/2312783_pc.html","type":"official-media"},{"title":"广州市教育局：2024广州中考命题思路专家分析","url":"https://jyj.gz.gov.cn/gk/zfxxgkml/ywgz/zsks/content/post_9738644.html","type":"official"},{"title":"2025北京中考语文试题解析","url":"https://news.qq.com/rain/a/20250626A088L900","type":"media"},{"title":"浙江省近三年（2023–2025）中考语文重难点变化趋势分析","url":"https://max.book118.com/html/2025/1225/8051047044010026.shtm","type":"teaching-analysis"},{"title":"学科网：2025小说阅读热点重点难点专练","url":"https://www.zxxk.com/soft/50981023.html","type":"prep-material"},{"title":"学科网：2024广东小说文本阅读备考（含命题新动向）","url":"https://www.zxxk.com/soft/43994904.html","type":"prep-material"},{"title":"2022广东中考语文试题结构变化说明","url":"https://www.jczhijia.com/art/16195.html","type":"media"},{"title":"2021中考小说（记叙文）题型分类汇编","url":"http://dl.5156edu.com/page/21-09-26/183591.html","type":"prep-material"}],"nav":{"homeLabel":"中考小说阅读","sections":[{"id":"overview","label":"五年总览"},{"id":"diff2025","label":"2025差异"},{"id":"categories","label":"八类设问"},{"id":"tips","label":"备考建议"},{"id":"sources","label":"来源链接"}]}},"dimLabels":[{"n":1,"name":"情节结构"},{"n":2,"name":"人物形象"},{"n":3,"name":"主题思想"},{"n":4,"name":"写作手法"},{"n":5,"name":"时代背景"},{"n":6,"name":"多角度解读"}]}</script>
+<script>
+(function(){
+  const DATA = JSON.parse(document.getElementById('app-data').textContent);
+  const app = document.getElementById('app');
+  const crumbEl = document.getElementById('crumb');
+  const ROMAN = ['①','②','③','④','⑤','⑥'];
+
+  function setTheme(t) {
+    if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    else document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('jy-theme', t);
+    document.getElementById('btn-light').classList.toggle('active', t !== 'dark');
+    document.getElementById('btn-dark').classList.toggle('active', t === 'dark');
+  }
+  document.getElementById('btn-light').onclick = function(){ setTheme('light'); };
+  document.getElementById('btn-dark').onclick = function(){ setTheme('dark'); };
+  if (localStorage.getItem('jy-theme') === 'dark') setTheme('dark');
+
+  function go(hash) {
+    location.hash = hash;
+  }
+  document.getElementById('brandBtn').onclick = function(){ go('home'); };
+  document.querySelectorAll('#siteNav .nav-link').forEach(function(btn){
+    btn.onclick = function(){ go(btn.getAttribute('data-nav')); };
+  });
+
+  function esc(s) {
+    if (s == null) return '';
+    return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function parseRoute() {
+    var h = (location.hash || '#home').replace(/^#/, '');
+    if (!h) h = 'home';
+    var parts = h.split('/');
+    return { raw: h, parts: parts, root: parts[0] };
+  }
+
+  function unitById(uid) {
+    return DATA.units.find(function(u){ return u.id === uid; });
+  }
+  function unitOfLesson(lid) {
+    return DATA.units.find(function(u){ return u.lessons.indexOf(lid) >= 0; });
+  }
+
+  function crumb(items) {
+    crumbEl.innerHTML = items.map(function(it, i){
+      if (i === items.length - 1) return '<span>' + esc(it.label) + '</span>';
+      return '<button type="button" class="linkish" data-go="' + esc(it.hash) + '">' + esc(it.label) + '</button><span class="sep">/</span>';
+    }).join(' ');
+    crumbEl.querySelectorAll('[data-go]').forEach(function(b){
+      b.onclick = function(){ go(b.getAttribute('data-go')); };
+    });
+  }
+
+  function backBtn(hash, label) {
+    return '<button type="button" class="back-btn" data-go="' + esc(hash) + '">← ' + esc(label || '返回上一级') + '</button>';
+  }
+
+  function bindGoes(root) {
+    root.querySelectorAll('[data-go]').forEach(function(el){
+      el.onclick = function(){ go(el.getAttribute('data-go')); };
+    });
+  }
+
+  function showToast(msg) {
+    var el = document.getElementById('toast');
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add('show');
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ el.classList.remove('show'); }, 2600);
+  }
+
+  function updateSiteNav() {
+    var h = (location.hash || '#home').replace(/^#/, '') || 'home';
+    document.querySelectorAll('#siteNav .nav-link').forEach(function(btn){
+      var target = btn.getAttribute('data-nav') || '';
+      var active = false;
+      if (target === 'home') active = (h === 'home');
+      else if (target === 'zhongkao') active = h.indexOf('zhongkao') === 0;
+      else active = h === target || h.indexOf(target + '/') === 0;
+      btn.classList.toggle('active', active);
+    });
+  }
+
+  var PAGE_SIZE = 6;
+  function paginate(items, page) {
+    var total = items.length;
+    var pages = Math.max(1, Math.ceil(total / PAGE_SIZE) || 1);
+    page = Math.min(Math.max(1, page || 1), pages);
+    var start = (page - 1) * PAGE_SIZE;
+    return { page: page, pages: pages, total: total, slice: items.slice(start, start + PAGE_SIZE) };
+  }
+  function pagerHtml(baseHash, page, pages) {
+    if (pages <= 1) return '';
+    var prev = page > 1 ? (baseHash + '?p=' + (page - 1)) : '';
+    var next = page < pages ? (baseHash + '?p=' + (page + 1)) : '';
+    return '<div class="pager">' +
+      '<button type="button" ' + (page <= 1 ? 'disabled' : 'data-go="' + prev + '"') + '>上一页</button>' +
+      '<span class="page-info">第 ' + page + ' / ' + pages + ' 页</span>' +
+      '<button type="button" ' + (page >= pages ? 'disabled' : 'data-go="' + next + '"') + '>下一页</button></div>';
+  }
+  function pageFromRoute() {
+    var h = location.hash || '';
+    var m = h.match(/[?&]p=(\d+)/);
+    return m ? parseInt(m[1], 10) : 1;
+  }
+
+  var SHARE_KEY = 'yuwen-share-code';
+  var cloudCache = {};
+
+  function getShareCode() {
+    try { return (localStorage.getItem(SHARE_KEY) || '').trim(); } catch (e) { return ''; }
+  }
+  function setShareCode(code) {
+    code = String(code || '').trim().toUpperCase();
+    try { localStorage.setItem(SHARE_KEY, code); } catch (e) {}
+    return code;
+  }
+  function validShareCode(code) {
+    return /^[A-Za-z0-9]{4,16}$/.test(code || '');
+  }
+
+  async function apiShareCreate(preferred) {
+    var body = preferred ? { code: preferred } : {};
+    var res = await fetch('/api/share', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (!res.ok) throw new Error('share failed');
+    var data = await res.json();
+    return data.code;
+  }
+  async function apiLoadContent(code, lesson) {
+    var res = await fetch('/api/content?code=' + encodeURIComponent(code) + '&lesson=' + encodeURIComponent(lesson));
+    if (!res.ok) throw new Error('load failed');
+    return res.json();
+  }
+  async function apiSaveContent(code, lesson, kind, item) {
+    var res = await fetch('/api/content', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ code: code, lesson: lesson, kind: kind, item: item })
+    });
+    if (!res.ok) throw new Error('save failed');
+    return res.json();
+  }
+
+  async function ensureShareCode() {
+    var code = getShareCode();
+    if (validShareCode(code)) return code;
+    try {
+      code = await apiShareCreate();
+      setShareCode(code);
+      return code;
+    } catch (e) {
+      code = 'L' + Math.random().toString(36).slice(2, 8).toUpperCase();
+      setShareCode(code);
+      return code;
+    }
+  }
+
+  function renderShareBar() {
+    var code = getShareCode() || '……';
+    return '<div class="share-bar" id="shareBar">' +
+      '<span>分享码</span><span class="code-pill" id="shareCodePill">' + esc(code) + '</span>' +
+      '<button type="button" class="btn-ghost" id="btnCopyShare">复制</button>' +
+      '<button type="button" class="btn-ghost" id="btnNewShare">新建分享码</button>' +
+      '<input id="shareInput" maxlength="16" placeholder="粘贴他人码" aria-label="粘贴分享码" />' +
+      '<button type="button" class="btn-primary" id="btnSwitchShare">切换</button>' +
+      '</div>';
+  }
+
+
+  function renderDimCard(n, dim) {
+    if (!dim) return '';
+    var bullets = (dim.bullets || []).map(function(b){ return '<li>' + esc(b) + '</li>'; }).join('');
+    return '<div class="dim d' + n + '"><h4>' + ROMAN[n-1] + ' ' + esc(dim.title) + '</h4>' +
+      (dim.lead ? '<p>' + esc(dim.lead) + '</p>' : '') +
+      (bullets ? '<ul>' + bullets + '</ul>' : '') + '</div>';
+  }
+
+  function viewHome() {
+    crumb([{label:'主页', hash:'home'}]);
+    updateSiteNav();
+    var unitLabels = ['一','二','三','四','五','六'];
+    var units = DATA.units.map(function(u, i){
+      var shortName = u.short.replace(/^第.单元[　\s]*/, '');
+      return '<button type="button" class="unit-mini-card" data-go="liudu/' + u.id + '">' +
+        '<h3>' + unitLabels[i] + '单元 · ' + esc(shortName) + '</h3>' +
+        '<p>' + esc(u.goal) + ' · ' + u.lessons.length + ' 篇</p></button>';
+    }).join('');
+    app.innerHTML =
+      '<div class="hero"><h1>人教部编版九年级语文上册</h1>' +
+      '<p>手机友好复习站。顶栏直接进<strong>一至六单元</strong>课文列表；也可看<strong>中考趋势</strong>。课文页含六维卡片与可同步的解读/情境任务。</p>' +
+      '<div class="dims-legend">' +
+      '<span class="l1">① 情节结构</span><span class="l2">② 人物形象</span><span class="l3">③ 主题思想</span>' +
+      '<span class="l4">④ 写作手法</span><span class="l5">⑤ 时代背景</span><span class="l6">⑥ 多角度解读</span></div></div>' +
+      '<h3 style="color:var(--heading);font-size:1rem;margin:0 0 0.55rem">按单元进入（六维解读）</h3>' +
+      '<div class="home-unit-grid">' + units + '</div>' +
+      '<div class="grid-2" style="margin-top:1rem">' +
+      '<button type="button" class="entry-card" data-go="zhongkao"><h3>中考趋势</h3>' +
+      '<p>2021–2025 小说阅读五年趋势、八类设问与备考建议（含多角度解读方向）。</p>' +
+      '<div class="go">进入中考板块 →</div></button>' +
+      '<div class="entry-card" style="cursor:default"><h3>关于本站</h3>' +
+      '<p>目录依据人教电子课本网九年级上册（2026秋版）。解读供复习提纲；追加内容可用分享码跨设备同步，并缓存在本机。</p>' +
+      '<div class="go">顶栏点单元即可开读</div></div></div>' +
+      '<p class="footer-note">不含课文原文。中考材料归纳自公开评析，不编造真题原文。</p>';
+    bindGoes(app);
+  }
+
+  function viewLiudu() {
+    // 不再把「六维解读」作为一级列表页；顶栏直达单元
+    go('home');
+  }
+
+  function viewUnit(uid) {
+    var u = unitById(uid);
+    if (!u) { go('home'); return; }
+    updateSiteNav();
+    var page = pageFromRoute();
+    var cards = u.lessons.map(function(lid){
+      var L = DATA.lessons[lid];
+      if (!L) return null;
+      return { lid: lid, L: L };
+    }).filter(Boolean);
+    var pg = paginate(cards, page);
+    crumb([
+      {label:'主页', hash:'home'},
+      {label:u.short, hash:'liudu/'+uid}
+    ]);
+    var list = pg.slice.map(function(it){
+      var L = it.L;
+      return '<button type="button" class="list-card" data-go="liudu/' + uid + '/' + it.lid + '">' +
+        '<div class="t">' + esc(L.title) + (L.star ? '<span class="star">自读</span>' : '') + '</div>' +
+        '<div class="s">' + esc(L.tag || (L.simple ? '学习要点' : '六维卡片')) + '</div></button>';
+    }).join('');
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>' + esc(u.name) + '</h2><p>' + esc(u.goal) + '</p></div>' +
+      list + pagerHtml('liudu/' + uid, pg.page, pg.pages);
+    bindGoes(app);
+  }
+
+  function notesStorageKey(lid) { return 'yuwen-notes-' + lid; }
+  function tasksStorageKey(lid) { return 'yuwen-tasks-' + lid; }
+
+  function readLocalJson(key) {
+    try {
+      var raw = localStorage.getItem(key);
+      if (!raw) return [];
+      var arr = JSON.parse(raw);
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) { return []; }
+  }
+  function writeLocalJson(key, arr) {
+    localStorage.setItem(key, JSON.stringify(arr));
+  }
+
+  function shanghaiNowISO() {
+    var d = new Date();
+    var parts = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+    }).formatToParts(d);
+    var map = {};
+    parts.forEach(function(p){ if (p.type !== 'literal') map[p.type] = p.value; });
+    return map.year + '-' + map.month + '-' + map.day + 'T' + map.hour + ':' + map.minute + ':' + map.second + '+08:00';
+  }
+
+  function formatNoteDate(iso) {
+    if (!iso) return '';
+    var m = String(iso).match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/);
+    if (m) return m[1] + ' ' + m[2] + '（上海时区）';
+    return esc(iso) + '（上海时区）';
+  }
+
+  function mergeById(lists) {
+    var map = {};
+    lists.forEach(function(arr){
+      (arr || []).forEach(function(item){
+        if (!item || !item.id) return;
+        map[item.id] = item;
+      });
+    });
+    var all = Object.keys(map).map(function(k){ return map[k]; });
+    all.sort(function(a, b){
+      return String(a.createdAt || '').localeCompare(String(b.createdAt || ''));
+    });
+    return all;
+  }
+
+  function mergeNotes(L) {
+    var builtin = (L.contentNotes || []).map(function(n){
+      return Object.assign({}, n, { _source: 'builtin' });
+    });
+    var local = readLocalJson(notesStorageKey(L.id)).map(function(n){
+      return Object.assign({}, n, { _source: 'local' });
+    });
+    var cloud = ((cloudCache[L.id] && cloudCache[L.id].notes) || []).map(function(n){
+      return Object.assign({}, n, { _source: n._source || 'cloud' });
+    });
+    return mergeById([builtin, local, cloud]);
+  }
+
+  function mergeTasks(L) {
+    var builtin = (L.situationalTasks || []).map(function(t){
+      return Object.assign({}, t, { _source: 'builtin' });
+    });
+    var local = readLocalJson(tasksStorageKey(L.id)).map(function(t){
+      return Object.assign({}, t, { _source: 'local' });
+    });
+    var cloud = ((cloudCache[L.id] && cloudCache[L.id].tasks) || []).map(function(t){
+      return Object.assign({}, t, { _source: t._source || 'cloud' });
+    });
+    return mergeById([builtin, local, cloud]);
+  }
+
+  function renderNoteItem(n) {
+    var tags = (n.tags || []).map(function(t){ return '<span class="chip">' + esc(t) + '</span>'; }).join('');
+    var src = n._source === 'local' ? '<span class="badge-src">我的追加</span>' : '<span class="badge-src">内置</span>';
+    return '<article class="note-item"><h4>' + esc(n.title) + src + '</h4>' +
+      '<div class="note-meta">' + formatNoteDate(n.createdAt) + '</div>' +
+      '<div class="note-body">' + esc(n.body) + '</div>' +
+      (tags ? '<div class="tag-row">' + tags + '</div>' : '') + '</article>';
+  }
+
+  function sidesToChatTurns(sides) {
+    if (!sides) return [];
+    var pro = sides.pro || [];
+    var con = sides.con || [];
+    var turns = [];
+    var i = 0, max = Math.max(pro.length, con.length);
+    function pointText(p) {
+      if (typeof p === 'string') return p;
+      var claim = (p && p.claim) || '';
+      var evidence = (p && p.evidence) || '';
+      if (claim && evidence) return claim + '\n\n依据：' + evidence;
+      return claim || evidence;
+    }
+    for (i = 0; i < max; i++) {
+      if (i < pro.length) turns.push({ side: 'pro', text: pointText(pro[i]) });
+      if (i < con.length) turns.push({ side: 'con', text: pointText(con[i]) });
+    }
+    return turns;
+  }
+
+  function renderChatThread(turns) {
+    if (!turns || !turns.length) return '';
+    var rows = turns.map(function(turn){
+      var side = (turn.side === 'con') ? 'con' : 'pro';
+      var nick = side === 'pro' ? '小正（正方）' : '小反（反方）';
+      return '<div class="chat-row ' + side + '">' +
+        '<div class="chat-nick">' + nick + '</div>' +
+        '<div class="chat-bubble">' + esc(turn.text || '') + '</div>' +
+        '</div>';
+    }).join('');
+    return '<div class="chat-thread" role="log" aria-label="正反方辩论对话">' + rows + '</div>';
+  }
+
+  function renderDebateChat(t) {
+    var turns = (t.chatTurns && t.chatTurns.length) ? t.chatTurns : sidesToChatTurns(t.sides);
+    return renderChatThread(turns);
+  }
+
+  function renderTaskItem(t) {
+    var src = t._source === 'local' ? '<span class="badge-src">我的追加</span>' : '<span class="badge-src">内置</span>';
+    var free = t.freeText ? '<div class="note-body" style="margin-top:0.4rem">' + esc(t.freeText) + '</div>' : '';
+    return '<article class="task-item"><h4>' + esc(t.title) + src + '</h4>' +
+      '<div class="task-meta">' + formatNoteDate(t.createdAt) + '</div>' +
+      (t.prompt ? '<div class="task-prompt">' + esc(t.prompt) + '</div>' : '') +
+      renderDebateChat(t) + free + '</article>';
+  }
+
+  function renderNotesPanel(L) {
+    var notes = mergeNotes(L);
+    var list = notes.length
+      ? notes.map(renderNoteItem).join('')
+      : '<p class="empty-hint">暂无解读。可展开下方「追加解读」添加，或用分享码同步。</p>';
+    return '<section class="side-panel" id="notesPanel" data-lid="' + esc(L.id) + '">' +
+      '<h3>内容解读 <span class="panel-hint">按时间正序 · 可追加</span></h3>' +
+      '<p class="muted" style="font-size:0.8rem;margin-bottom:0.4rem">追加内容会同步到云端（分享码），并缓存在本机。内置条目仍在页面数据中。</p>' +
+      '<div class="notes-list">' + list + '</div>' +
+      '<details class="form-accordion" id="noteAccordion"><summary>追加解读</summary>' +
+      '<form class="side-form" id="noteForm">' +
+      '<label for="noteTitle">标题</label>' +
+      '<input id="noteTitle" name="title" maxlength="80" required placeholder="例如：又一个比较角度" />' +
+      '<label for="noteBody">正文</label>' +
+      '<textarea id="noteBody" name="body" required placeholder="写下要点，面向初三同学说清楚即可"></textarea>' +
+      '<div class="form-actions"><button type="submit" class="btn-primary">保存并同步</button></div>' +
+      '</form></details></section>';
+  }
+
+  function renderTasksPanel(L) {
+    var tasks = mergeTasks(L);
+    var list = tasks.length
+      ? tasks.map(renderTaskItem).join('')
+      : '<p class="empty-hint">暂无情境任务。可展开下方「追加任务」添加辩论题。</p>';
+    return '<section class="side-panel" id="tasksPanel" data-lid="' + esc(L.id) + '">' +
+      '<h3>情境任务 <span class="panel-hint">按时间正序 · 可追加</span></h3>' +
+      '<p class="muted" style="font-size:0.8rem;margin-bottom:0.4rem">对齐 2025 中考情境任务与创意表达。追加内容会同步到云端（分享码），并缓存在本机。</p>' +
+      '<div class="tasks-list">' + list + '</div>' +
+      '<details class="form-accordion" id="taskAccordion"><summary>追加任务</summary>' +
+      '<form class="side-form" id="taskForm">' +
+      '<label for="taskTitle">标题</label>' +
+      '<input id="taskTitle" name="title" maxlength="100" required placeholder="例如：续写船上相遇之后" />' +
+      '<label for="taskPrompt">任务说明（可选）</label>' +
+      '<textarea id="taskPrompt" name="prompt" placeholder="情境与要求"></textarea>' +
+      '<label for="taskPro">正方要点（可选，每行一条「观点｜依据」）</label>' +
+      '<textarea id="taskPro" name="pro" placeholder="观点A｜原文依据A"></textarea>' +
+      '<label for="taskCon">反方要点（可选，每行一条「观点｜依据」）</label>' +
+      '<textarea id="taskCon" name="con" placeholder="观点B｜原文依据B"></textarea>' +
+      '<label for="taskFree">或自由文本（可选）</label>' +
+      '<textarea id="taskFree" name="freeText" placeholder="不方便拆正反时，整段写在这里"></textarea>' +
+      '<div class="form-actions"><button type="submit" class="btn-primary">保存并同步</button></div>' +
+      '</form></details></section>';
+  }
+
+  function parseSideLines(text) {
+    return String(text || '').split(/\n+/).map(function(line){
+      line = line.trim();
+      if (!line) return null;
+      var parts = line.split(/｜|\|/);
+      if (parts.length >= 2) {
+        return { claim: parts[0].trim(), evidence: parts.slice(1).join('|').trim() };
+      }
+      return { claim: line, evidence: '' };
+    }).filter(Boolean);
+  }
+
+  function bindShareBar(uid, lid) {
+    var copyBtn = document.getElementById('btnCopyShare');
+    var newBtn = document.getElementById('btnNewShare');
+    var switchBtn = document.getElementById('btnSwitchShare');
+    if (copyBtn) copyBtn.onclick = function(){
+      var code = getShareCode();
+      if (!code) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(function(){ showToast('已复制分享码 ' + code); },
+          function(){ showToast(code); });
+      } else { showToast(code); }
+    };
+    if (newBtn) newBtn.onclick = async function(){
+      try {
+        var code = await apiShareCreate();
+        setShareCode(code);
+        cloudCache[lid] = { notes: [], tasks: [] };
+        showToast('已新建分享码 ' + code);
+        viewLesson(uid, lid);
+      } catch (e) { showToast('新建失败，请稍后重试'); }
+    };
+    if (switchBtn) switchBtn.onclick = async function(){
+      var input = document.getElementById('shareInput');
+      var code = ((input && input.value) || '').trim().toUpperCase();
+      if (!validShareCode(code)) { showToast('分享码须为 4–16 位字母数字'); return; }
+      try {
+        await apiShareCreate(code);
+        setShareCode(code);
+        var data = await apiLoadContent(code, lid);
+        cloudCache[lid] = { notes: data.notes || [], tasks: data.tasks || [] };
+        showToast('已切换到 ' + code);
+        viewLesson(uid, lid);
+      } catch (e) {
+        setShareCode(code);
+        showToast('已切换本机码；云端暂不可用');
+        viewLesson(uid, lid);
+      }
+    };
+  }
+
+  function bindLessonExtras(uid, lid) {
+    bindShareBar(uid, lid);
+    var noteForm = document.getElementById('noteForm');
+    if (noteForm) {
+      noteForm.onsubmit = async function(e){
+        e.preventDefault();
+        var title = (document.getElementById('noteTitle').value || '').trim();
+        var body = (document.getElementById('noteBody').value || '').trim();
+        if (!title || !body) return;
+        var item = {
+          id: 'note-' + Date.now(),
+          title: title,
+          body: body,
+          tags: ['我的追加'],
+          createdAt: shanghaiNowISO()
+        };
+        var arr = readLocalJson(notesStorageKey(lid));
+        arr.push(item);
+        writeLocalJson(notesStorageKey(lid), arr);
+        var code = getShareCode();
+        var synced = false;
+        if (validShareCode(code)) {
+          try {
+            await apiSaveContent(code, lid, 'note', item);
+            synced = true;
+            if (!cloudCache[lid]) cloudCache[lid] = { notes: [], tasks: [] };
+            cloudCache[lid].notes = (cloudCache[lid].notes || []).filter(function(n){ return n.id !== item.id; }).concat([item]);
+          } catch (err) { synced = false; }
+        }
+        showToast(synced ? '已保存并同步到云端' : '已保存到本机（云端暂不可用）');
+        viewLesson(uid, lid);
+        var el = document.getElementById('notesPanel');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+    }
+    var taskForm = document.getElementById('taskForm');
+    if (taskForm) {
+      taskForm.onsubmit = async function(e){
+        e.preventDefault();
+        var title = (document.getElementById('taskTitle').value || '').trim();
+        if (!title) return;
+        var prompt = (document.getElementById('taskPrompt').value || '').trim();
+        var freeText = (document.getElementById('taskFree').value || '').trim();
+        var pro = parseSideLines(document.getElementById('taskPro').value);
+        var con = parseSideLines(document.getElementById('taskCon').value);
+        var sides = (pro.length || con.length) ? { pro: pro, con: con } : null;
+        var item = {
+          id: 'task-' + Date.now(),
+          title: title,
+          prompt: prompt || undefined,
+          sides: sides || undefined,
+          freeText: freeText || undefined,
+          createdAt: shanghaiNowISO()
+        };
+        var arr = readLocalJson(tasksStorageKey(lid));
+        arr.push(item);
+        writeLocalJson(tasksStorageKey(lid), arr);
+        var code = getShareCode();
+        var synced = false;
+        if (validShareCode(code)) {
+          try {
+            await apiSaveContent(code, lid, 'task', item);
+            synced = true;
+            if (!cloudCache[lid]) cloudCache[lid] = { notes: [], tasks: [] };
+            cloudCache[lid].tasks = (cloudCache[lid].tasks || []).filter(function(t){ return t.id !== item.id; }).concat([item]);
+          } catch (err) { synced = false; }
+        }
+        showToast(synced ? '已保存并同步到云端' : '已保存到本机（云端暂不可用）');
+        viewLesson(uid, lid);
+        var el = document.getElementById('tasksPanel');
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+    }
+  }
+
+  function viewLesson(uid, lid) {
+    var u = unitById(uid);
+    var L = DATA.lessons[lid];
+    if (!u || !L) { go('liudu/' + uid); return; }
+    updateSiteNav();
+    crumb([
+      {label:'主页', hash:'home'},
+      {label:u.short, hash:'liudu/'+uid},
+      {label:L.title.replace(/^[\d＊*\s　]+/,'').slice(0,16), hash:'liudu/'+uid+'/'+lid}
+    ]);
+    var cards = '';
+    if (L.dims && Object.keys(L.dims).length) {
+      for (var n = 1; n <= 5; n++) cards += renderDimCard(n, L.dims[String(n)]);
+      if (L.d6) cards += renderDimCard(6, L.d6);
+    } else {
+      cards += '<div class="simple-block"><strong>学习要点：</strong>' + esc((L.simple||'').replace(/^学习要点：/,'')) + '</div>';
+      if (L.d6) cards += renderDimCard(6, L.d6);
+    }
+    var showNotes = !!(L.notesEnabled || (L.contentNotes && L.contentNotes.length));
+    var showTasks = !!(L.tasksEnabled || (L.situationalTasks && L.situationalTasks.length));
+    var side = '';
+    if (showNotes || showTasks) side += renderShareBar();
+    if (showNotes) side += renderNotesPanel(L);
+    if (showTasks) side += renderTasksPanel(L);
+    var body;
+    if (side) {
+      body = '<div class="lesson-layout"><div class="dims-col">' + cards + '</div>' +
+        '<div class="side-col">' + side + '</div></div>';
+    } else {
+      body = cards;
+    }
+    app.innerHTML = backBtn('liudu/' + uid, '返回' + u.short) +
+      '<div class="lesson-head"><h2>' + esc(L.title) + (L.star ? ' <span class="star">自读</span>' : '') + '</h2>' +
+      '<div class="meta">' + (L.tag ? '<span class="tag">' + esc(L.tag) + '</span>' : '') +
+      '本页仅含分析卡片' + (side ? '与解读/情境栏' : '') + '，不含课文原文</div></div>' + body +
+      '<p class="footer-note">⑥ 多角度解读对齐 2025 中考：综合理解、跨文本比较、创意表达、多视角探究。练习时请打开课本对照原文。</p>';
+    bindGoes(app);
+    if (side) bindLessonExtras(uid, lid);
+    if (showNotes || showTasks) {
+      (async function(){
+        try {
+          var code = await ensureShareCode();
+          var pill = document.getElementById('shareCodePill');
+          if (pill) pill.textContent = code;
+          var data = await apiLoadContent(code, lid);
+          cloudCache[lid] = { notes: data.notes || [], tasks: data.tasks || [] };
+          var panelN = document.getElementById('notesPanel');
+          var panelT = document.getElementById('tasksPanel');
+          if (panelN && panelN.getAttribute('data-lid') === lid) {
+            var notes = mergeNotes(L);
+            var listEl = panelN.querySelector('.notes-list');
+            if (listEl) listEl.innerHTML = notes.length ? notes.map(renderNoteItem).join('') : '<p class="empty-hint">暂无解读。</p>';
+          }
+          if (panelT && panelT.getAttribute('data-lid') === lid) {
+            var tasks = mergeTasks(L);
+            var listEl2 = panelT.querySelector('.tasks-list');
+            if (listEl2) listEl2.innerHTML = tasks.length ? tasks.map(renderTaskItem).join('') : '<p class="empty-hint">暂无情境任务。</p>';
+          }
+        } catch (e) { /* offline ok */ }
+      })();
+    }
+  }
+
+  function viewZkHome() {
+    var zk = DATA.zhongkao;
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'}]);
+    var nav = (zk.nav.sections || []).map(function(s){
+      return '<button type="button" class="list-card" data-go="zhongkao/' + s.id + '">' +
+        '<div class="t">' + esc(s.label) + '</div></button>';
+    }).join('');
+    // also category shortcuts
+    var cats = (zk.categories || []).map(function(c){
+      return '<button type="button" class="list-card" data-go="zhongkao/categories/' + c.id + '">' +
+        '<div class="t">' + esc(c.name) + ' <span class="heat">' + esc(c.heatLabel) + '</span></div>' +
+        '<div class="s">' + esc(c.shortName) + ' · ' + esc(c.what) + '</div></button>';
+    }).join('');
+    app.innerHTML = backBtn('home','返回主页') +
+      '<div class="hero"><h2>' + esc(zk.meta.title) + '</h2>' +
+      '<p>' + esc(zk.meta.subtitle) + '</p>' +
+      '<p class="muted" style="margin-top:0.5rem">' + esc(zk.meta.scopeNote) + '</p></div>' +
+      '<h3 style="color:var(--heading);font-size:1rem;margin:0.5rem 0 0.6rem">板块导航</h3>' + nav +
+      '<h3 style="color:var(--heading);font-size:1rem;margin:1.2rem 0 0.6rem">八类设问（点进分类）</h3>' + cats +
+      '<p class="footer-note">' + esc(zk.meta.disclaimer) + ' · 更新 ' + esc(zk.meta.updated) + '（' + esc(zk.meta.timezone) + '）</p>';
+    bindGoes(app);
+  }
+
+  function viewZkOverview() {
+    var zk = DATA.zhongkao;
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'五年总览', hash:'zhongkao/overview'}]);
+    var rows = (zk.overviewTable||[]).map(function(r){
+      return '<tr><th>' + esc(r.year) + '</th><td>' + esc(r.textFeatures) + '</td><td>' +
+        esc((r.commonTypes||[]).join('、')) + '</td><td>' + esc(r.scoreRange) + '</td><td>' +
+        esc((r.trendKeywords||[]).join('；')) + '</td></tr>';
+    }).join('');
+    app.innerHTML = backBtn('zhongkao','返回中考板块') +
+      '<div class="hero"><h2>五年总览（2021–2025）</h2><p>' + esc(zk.scoreNote) + '</p></div>' +
+      '<div style="overflow-x:auto"><table class="zk-table"><thead><tr><th>年份</th><th>选文面貌</th><th>核心考法</th><th>分值</th><th>趋势</th></tr></thead><tbody>' +
+      rows + '</tbody></table></div>' +
+      '<div class="point-card"><h4>不变的底盘</h4><ul class="plain">' +
+      (zk.stableCore||[]).map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') +
+      '</ul></div>';
+    bindGoes(app);
+  }
+
+  function viewZkDiff() {
+    var d = DATA.zhongkao.diff2025;
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'2025差异', hash:'zhongkao/diff2025'}]);
+    var points = (d.points||[]).map(function(p){
+      return '<div class="point-card"><h4>' + esc(p.title) + '</h4><p>' + esc(p.detail) + '</p>' +
+        '<p class="muted">范围：' + esc(p.scope) + '</p></div>';
+    }).join('');
+    app.innerHTML = backBtn('zhongkao','返回中考板块') +
+      '<div class="hero"><h2>2025 与此前差异</h2><p>' + esc(d.summary) + '</p></div>' + points;
+    bindGoes(app);
+  }
+
+  function viewZkCategories() {
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'八类设问', hash:'zhongkao/categories'}]);
+    var cats = (DATA.zhongkao.categories||[]).map(function(c){
+      return '<button type="button" class="list-card" data-go="zhongkao/categories/' + c.id + '">' +
+        '<div class="t">' + esc(c.name) + ' <span class="heat">' + esc(c.heatLabel) + '</span></div>' +
+        '<div class="s">' + esc(c.shortName) + '</div></button>';
+    }).join('');
+    app.innerHTML = backBtn('zhongkao','返回中考板块') +
+      '<div class="hero"><h2>八类设问体系</h2><p>把五年真题规律整理成可训练的分类；点进每一类看典型问法与答题策略。</p></div>' + cats;
+    bindGoes(app);
+  }
+
+  function viewZkCat(cid) {
+    var c = (DATA.zhongkao.categories||[]).find(function(x){ return x.id === cid; });
+    if (!c) { go('zhongkao/categories'); return; }
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'八类设问', hash:'zhongkao/categories'},{label:c.name, hash:'zhongkao/categories/'+cid}]);
+    app.innerHTML = backBtn('zhongkao/categories','返回八类设问') +
+      '<div class="hero"><h2>' + esc(c.name) + ' <span class="heat">' + esc(c.heatLabel) + '</span></h2>' +
+      '<p>' + esc(c.shortName) + '</p></div>' +
+      '<div class="cat-card"><h4>考什么</h4><p>' + esc(c.what) + '</p></div>' +
+      '<div class="cat-card"><h4>典型问法（范式，非原题）</h4><ul class="plain">' +
+      (c.typicalQuestions||[]).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul></div>' +
+      '<div class="cat-card"><h4>答题策略</h4><p>' + esc(c.answerStrategy) + '</p></div>' +
+      '<div class="cat-card"><h4>五年热度说明</h4><p class="muted">' + esc(c.yearNotes) + '</p></div>';
+    bindGoes(app);
+  }
+
+  function viewZkTips() {
+    var zk = DATA.zhongkao;
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'备考建议', hash:'zhongkao/tips'}]);
+    var tips = (zk.studyTips||[]).map(function(t){ return '<li>' + esc(t) + '</li>'; }).join('');
+    var reg = (zk.regionalNotes||[]).map(function(r){
+      return '<div class="point-card"><h4>' + esc(r.region) + ' · ' + esc(r.year) + '</h4><p>' + esc(r.note) + '</p>' +
+        (r.url ? '<p class="muted"><a href="' + esc(r.url) + '" target="_blank" rel="noopener">来源链接</a></p>' : '') + '</div>';
+    }).join('');
+    app.innerHTML = backBtn('zhongkao','返回中考板块') +
+      '<div class="hero"><h2>备考建议</h2></div><ul class="plain">' + tips + '</ul>' +
+      '<h3 style="color:var(--heading);margin:1.2rem 0 0.6rem;font-size:1rem">地区说明（个例）</h3>' + reg;
+    bindGoes(app);
+  }
+
+  function viewZkSources() {
+    var sources = DATA.zhongkao.sources || [];
+    crumb([{label:'主页', hash:'home'},{label:'中考小说阅读', hash:'zhongkao'},{label:'来源链接', hash:'zhongkao/sources'}]);
+    var list = sources.map(function(s){
+      return '<div class="point-card"><h4>' + esc(s.title) + '</h4>' +
+        '<p class="muted">' + esc(s.type) + '</p>' +
+        '<p><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.url) + '</a></p></div>';
+    }).join('');
+    app.innerHTML = backBtn('zhongkao','返回中考板块') +
+      '<div class="hero"><h2>来源链接</h2><p class="muted">公开评析与官方通报；请自行核验原文。</p></div>' + list;
+    bindGoes(app);
+  }
+
+  function render() {
+    var r = parseRoute();
+    r.parts = r.parts.map(function(p){ return p.split('?')[0]; });
+    r.root = (r.parts[0] || 'home');
+    window.scrollTo(0, 0);
+    updateSiteNav();
+    if (r.root === 'home') { viewHome(); return; }
+    if (r.root === 'liudu') {
+      if (r.parts.length === 1) { viewLiudu(); return; }
+      if (r.parts.length === 2) { viewUnit(r.parts[1]); return; }
+      if (r.parts.length >= 3) { viewLesson(r.parts[1], r.parts[2]); return; }
+    }
+
+    if (r.root === 'zhongkao') {
+      if (r.parts.length === 1) { viewZkHome(); return; }
+      var sub = r.parts[1];
+      if (sub === 'overview') { viewZkOverview(); return; }
+      if (sub === 'diff2025') { viewZkDiff(); return; }
+      if (sub === 'categories') {
+        if (r.parts[2]) viewZkCat(r.parts[2]);
+        else viewZkCategories();
+        return;
+      }
+      if (sub === 'tips') { viewZkTips(); return; }
+      if (sub === 'sources') { viewZkSources(); return; }
+      viewZkHome(); return;
+    }
+    viewHome();
+  }
+
+  window.addEventListener('hashchange', render);
+  if (!location.hash) location.hash = 'home';
+  else render();
+})();
+</script>
+</body>
+</html>

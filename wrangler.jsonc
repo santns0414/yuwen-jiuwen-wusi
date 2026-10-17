@@ -1,0 +1,24 @@
+{
+  "name": "yuwen-jiuwen-wusi",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-17",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "yuwen-jiuwen-wusi",
+      "database_id": "6e1893cd-69d1-4175-b2a6-9b62e1f9b14b"
+    }
+  ],
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "yuwen.aixue.org",
+      "custom_domain": true
+    }
+  ]
+}
